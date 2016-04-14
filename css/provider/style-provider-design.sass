@@ -1,0 +1,124 @@
+@import ../style_main
+@import ../navbar
+.text-ed
+  padding: 0 15px
+.offer-main-img-fon
+  .about-firm
+    h1.firm-name, h2.firm-slogan
+      color: grey
+.uslugi-panel
+  h3.maket-zag
+    padding-left: 15px
+    margin: 13px
+.but-for-foto
+  opacity: 0
+  height: 0
+table.add-design
+  margin-top: 10px
+  tr td
+    vertical-align: middle
+    padding: 3px 5px 3px 0
+    .minicolors-theme-bootstrap .minicolors-swatch
+      top: 10px
+.designing-page
+  position: relative
+  .about-firm
+    max-width: 500px
+    word-wrap: break-word
+  .table-about-firm
+    table tr td
+      color: grey
+    table tr td a
+      color: grey
+      &:hover
+        text-decoration: underline
+    table tr td.green_ab_t, table tr td.green_ab_t
+      color: $red-color
+table tr td.new-main-color
+  word-wrap: break-word
+  max-width: 125px
+.design-page
+  .fileinput
+    padding: 0
+    width: 100%
+    margin: 0
+    .thumbnail
+      margin: 0
+      width: 100%
+      min-height: 300px
+      height: auto
+      padding: 0
+      background-color: #EFEFEF
+      img
+        height: auto
+        max-height: none
+        background: none
+        max-width: none
+      p
+        padding-top: 100px
+        font-size: 18px
+        color: $green-color
+        font-weight: bold
+.table-cell-part
+  .fileinput
+    padding: 0
+    width: 100%
+    margin: 0
+    display: table
+    .btn-default
+      width: 0
+      padding: 0
+    .thumbnail
+      display: table-cell
+      vertical-align: middle
+      margin: 0
+      width: 100%
+      height: 150px
+      border: none
+      border-radius: 0
+      padding: 3px
+      background: none
+      img
+        height: auto
+        max-height: none
+        width: auto
+      p
+        padding-top: 8px
+        font-size: 16px
+        color: $green-color
+        font-weight: bold
+table.design-info, table.design-social
+  width: 100%
+  margin: 5px 0
+  tr td.bold-social
+    font-weight: bold
+@media (max-width: 695px)
+  .design-page
+    display: none
+  .designing-page
+    img
+      display: block!important
+    .main-firm
+      position: absolute
+      top: 60px!important
+      left: 0
+      box-shadow: none
+      max-height: 200px
+      width: 100%
+    .about-firm
+      position: relative
+      top: 0
+      left: 0
+      h1, h2
+        color: $text-color
+        text-shadow: none
+    .table-about-firm table tr td a
+      color: grey
+  .table-about-firm-inner
+    padding: 0 0 10px 0
+  table.add-design tr td
+    display: none
+  .uslugi-panel
+    h3.maket-zag
+      padding-left: 15px
+      margin: 0 0 10px 0

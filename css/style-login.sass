@@ -1,0 +1,65 @@
+@import style_main
+@import navbar
+.main-login
+    @extend .main-content
+    margin-top: 70px
+.login-main-left
+    padding: 0
+    h2
+        padding: 0
+        text-align: center
+        font-size: 25px
+        color: $green-color
+        margin-top: 0
+        margin-bottom: 20px
+#enter
+    margin-top: 20px
+.login-main-center
+    margin: 0 auto
+    text-align: center
+    font-size: 15px
+    height: 135px
+    padding-top: 60px
+.login-main-right
+    padding: 0
+    font-size: 15px
+    p
+        margin: 7px 0 5px 0
+        padding: 0
+    .fa
+        margin-right: 8px
+        padding: 0
+.vk
+    background-color: #50759b
+    padding: 5px 10px
+    color: white
+    text-align: center
+    border: none
+    border-radius: 5px
+    font-size: 12px
+    min-width: 185px
+    margin: 7px 0
+.fb
+    @extend .vk
+    background-color: #3a5897
+    margin: 0 auto
+.login-main-under
+    padding-top: 30px
+    margin: 0 auto
+    text-align: center
+    i
+        margin-right: 5px
+    a
+        color: #36373a
+.login-main-under-text
+    display: inline-block
+    font-weight: bold
+    margin-right: 30px
+    cursor: pointer
+    &:hover
+        color: $red-color
+        transition: $transit
+@media (max-width: 767px)
+    .login-main-right
+        height: auto
+        padding: 20px 0 0 0

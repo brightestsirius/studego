@@ -1,0 +1,179 @@
+@import style_main
+@import navbar
+.offer-main
+    width: 70%
+    margin: 0 auto
+    padding: 0 0 80px 0
+.offer-main-zag
+    margin-bottom: 10px
+    padding: 3px 0
+    border-bottom: 2px solid #00a99e
+.offer-main-h
+    font-size: 18px
+    color: #00a99e
+    font-weight: bold
+    font-family: $font-stack
+.offer-main-add
+    float: right
+    padding-top: 5px
+.right-border
+    padding: 10px 15px 0 0
+    text-align: center
+    border-radius: 5px
+    background-color: rgba(231, 231, 231, 0.59)
+button.offer-price
+    background-color: #e3e3e3
+    color: rgb(249, 43, 52)
+    text-align: center
+    font-size: 18px
+    border-radius: 40px
+    border: none
+    padding: 5px 20px
+    font-weight: bold
+    cursor: default
+.right-border-zag
+    color: #00a99e
+    font-weight: bold
+    padding-right: 10px
+.right-border-main
+    text-align: left
+    padding: 15px 0 10px 10px
+    overflow: auto
+    table
+        margin-left: 15px
+        tr td
+            padding: 3px 5px
+            font-size: 14px
+        tr td.right-table-font
+            color: #00a99e
+.right-border-pad
+    padding: 5px 0
+.buttons
+    margin-top: 20px
+    button span
+        margin-right: 5px
+button.add-fav
+    background-color: rgb(0, 169, 157)
+    color: white
+    text-align: center
+    font-size: 14px
+    border-radius: 40px
+    border: none
+    padding: 8px 25px 10px 25px
+    float: left
+    cursor: pointer
+    &:hover
+        background-color: #01c9bc
+        transition: 0.3s
+button.get
+    background-color: rgb(249, 43, 52)
+    color: white
+    text-align: center
+    font-size: 14px
+    border-radius: 40px
+    border: none
+    padding: 8px 25px 10px 25px
+    float: right
+    cursor: pointer
+    &:hover
+        background-color: rgba(249, 43, 52,0.9)
+        transition: 0.3s
+.icons
+    i
+        font-size: 16px
+        margin-right: 5px
+        color: #b0b0b0
+        &:hover
+            color: #01c9bc
+.right-head
+    width: 100%
+    background-color: #00a99e
+    padding: 8px 15px
+    margin: 20px 0 10px 0
+    color: white
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+.offer-gl
+    margin-right: 8px
+.right-about p
+    text-indent: 20px
+.offer-main-img-txt-sm
+    text-align: center
+    margin-left: 30px
+.in-padd
+    padding: 0 10px
+    font-size: 14px
+    margin-bottom: 20px
+    p
+        text-align: justify
+.offer-main-img .col-md-7, .offer-main-img .col-sm-12
+    padding-right: 0
+.right-head-zag
+    display: inline-block
+    font-weight: bold
+@media (max-width: 1070px)
+    .offer-main
+        width: 80%
+@media (max-width: 991px)
+    .right-border
+        margin-top: 15px
+        width: 50%
+        background: none
+    .buttons
+        width: 50%
+        position: absolute
+        top: 0
+        right: 0
+        padding: 0
+        margin: 15px 0 0 0
+    .right-border-main table
+        margin-left: 0
+    .offer-main-img .col-md-7, .offer-main-img .col-sm-12
+        padding: 0 15px
+@media (max-width: 760px)
+    .buttons
+        margin: 0
+@media (max-width: 690px)
+    .right-border
+        margin-top: 15px
+        width: 100%
+    .buttons
+        width: 100%
+        position: relative
+        padding: 0
+        margin: 15px 0 0 0
+    .offer-main-zag
+        margin-bottom: 30px
+@media (max-width: 380px)
+    .buttons
+        width: 100%
+        position: relative
+        padding: 0
+        text-align: center
+        margin: 15px 0 0 0
+    button.get
+        float: none
+        margin: 15px auto 0 0
+    button.add-fav
+        float: none
+        margin: 0 auto
+.carousel
+    height: 300px
+    background-color: $light-grey-color
+.carousel .item
+    height: 300px
+    background: none
+.carousel-indicators li
+    background-color: rgba(0,0,0,0)
+    border: 1px solid white
+    border-radius: 10px
+.carousel-indicators .active
+    background-color: white
+.carousel-inner > .item > img
+    position: absolute
+    top: 0
+    left: 0
+    min-width: 100%
+    height: auto
+.carousel-control.right, .carousel-control.left
+    background-image: none

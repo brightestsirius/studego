@@ -1,0 +1,164 @@
+@import style_main
+@import navbar
+.logo-comp img
+    max-height: 120px
+    padding: 0 20px 0 0
+.right-border-about
+    width: 100%
+    padding: 0 15px 0 0
+    text-align: center
+    border-radius: 5px
+    margin-top: 3px
+.abProv-main-zag
+    margin-bottom: 10px
+    padding: 3px 0
+    border-bottom: 2px solid #00a99e
+.offer-main
+    .footer-sn
+        margin: 15px
+    .social, .social-act
+        width: 30px
+.about-pruv
+    .container
+        padding: 0
+        .col-sm-4, .col-xs-6
+            padding: 0 4px 10px 4px
+        .block_img_black
+            margin: 0 4px
+            bottom: 10px
+.offer-main-img-fon
+    overflow: hidden
+    height: 300px
+    position: relative
+    img
+        width: 100%
+    .logo-firm
+        position: absolute
+        bottom: 0
+        left: 30px
+        width: 180px
+        height: 150px
+        padding: 5px
+        display: table
+        border: 2px solid white
+        border-bottom: none
+        border-top-left-radius: 2px
+        border-top-right-radius: 2px
+        background-color: rgba(256,256,256,0.7)
+        box-shadow: 0 0 10px rgba(0,0,0,0.2)
+        .table-cell-part
+            display: table-cell
+            vertical-align: middle
+        .img-responsive
+            height: auto
+            max-height: 170px
+            margin: 0 auto
+            max-width: 170px
+            width: auto
+    .about-firm
+        position: absolute
+        top: 30px
+        left: 30px
+        h1
+            padding: 0 0 10px 0
+            margin: 0
+            font-size: 25px
+            color: $white-color
+            text-shadow: 0 0 10px rgba(0,0,0,0.2)
+        h2
+            padding: 0
+            margin: 0
+            font-size: 16px
+            color: $white-color
+            text-shadow: 0 0 10px rgba(0,0,0,0.2)
+.table-about-firm
+    position: absolute
+    bottom: 20px
+    left: 225px
+    table
+        margin: 0 auto
+        color: $white-color
+        tr td
+            vertical-align: top
+            padding: 3px 6px
+            a
+                color: $white-color
+        tr td.green_ab_t
+            font-weight: bold
+            color: gold
+        tr td.about-prow-site
+            max-width: 120px
+            word-wrap: break-word
+@media (max-width: 810px)
+    .offer-main-img-fon
+        .logo-firm
+            left: 20px
+        .about-firm
+            left: 20px
+    .table-about-firm
+        left: 205px
+@media (max-width: 580px)
+    .logo-comp
+        width: 100%
+        display: inline-table
+        margin-bottom: 10px
+@media (max-width: 695px)
+    .offer-main-img-fon
+        height: auto
+        padding: 0 0 30px 0
+        background: none!important
+        img
+            display: none
+        .logo-firm
+            position: relative
+            top: 0!important
+            left: 0
+            box-shadow: none
+            max-height: 200px
+            width: 100%
+            border: none
+            .img-responsive
+                display: block
+                max-height: 150px
+                width: auto
+        .about-firm
+            position: relative
+            top: 5px
+            left: 0
+            padding: 0 15px
+            color: $green-color!important
+            h1, h2
+                color: $text-color!important
+                text-shadow: none
+        .table-about-firm
+            position: relative
+            margin: 0
+            bottom: 0
+            left: 0
+            top: 20px
+            padding: 0 15px
+            table
+                margin: 0
+                color: $text-color
+                tr td
+                    display: block
+                    padding: 0
+                    table
+                        margin: 0
+                        tr td
+                            display: table-cell
+                            padding: 0 3px
+                            color: $text-color!important
+                            a
+                                color: $text-color!important
+                                &:hover
+                                    text-decoration: underline
+                        tr td.green_ab_t
+                            width: 80px
+                            color: $green-color!important
+                            padding: 0
+    .offer-main
+        .footer-sn
+            margin: 10px 3px 20px 3px
+        .social, .social-act
+            margin: 0 3px

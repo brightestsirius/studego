@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>studego</title>
+    <link rel="icon" type="image/png" href="../../img/brows-icon.ico" class="web-icon">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="../../js/jquery-1.11.3.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="../../js/provider-order.js"></script>
+    <script type="text/javascript" src="../../js/jquery.minicolors.js"></script>
+    <script type="text/javascript" src="../../js/summernote.min.js"></script>
+    <link rel="stylesheet" href="../../css/jquery.minicolors.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/summernote-bs3.css">
+    <link rel="stylesheet" href="../../css/summernote.css">
+<body>
+<div class="mf" id="mf">
+    <div class="in-menu">
+        <a href="../index.html">
+            <div class="logo"><img src="../../img/logo.png"></div>
+        </a>
+        <div class="navigation">
+            <nav>
+                <a href="javascript:void(0)" class="smobitrigger ion-navicon-round"><span>Menu</span></a>
+                <ul class="nav navbar-nav navbar-right mobimenu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Помощь <span class="caret"></span></a>
+                        <ul class="dropdown-menu navi">
+                            <li><a href=""><i class="glyphicon glyphicon-heart-empty drop-glyp"></i>О нас</a></li>
+                            <li><a href=""><i class="glyphicon glyphicon-thumbs-up drop-glyp"></i>Как это работает</a>
+                            </li>
+                            <li><a href=""><i class="glyphicon glyphicon-home drop-glyp"></i>Контакты</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Избранное <span class="glyphicon glyphicon-star-empty"
+                                                                 style="margin-left: 3px;"></span></a>
+                        <ul class="dropdown-menu navi">
+                            <li><a href="providerAddProp.html"><span class="act-menu provider-act-addprop"><i
+                                    class="glyphicon glyphicon-plus drop-glyp"></i>Добавить предложение</span></a></li>
+                            <li><a href="providerProfile.html"><i class="glyphicon glyphicon-calendar drop-glyp"></i>Панель
+                                управления</a></li>
+                            <li><a href="providerOrders.html"><i class="glyphicon glyphicon-cog drop-glyp"></i>Страница
+                                компании</a></li>
+                            <li><a href="providerOrders.html"><i class="glyphicon glyphicon-list-alt drop-glyp"></i>Заказы</a>
+                            </li>
+                            <li><a href="providerPropose.html"><i class="glyphicon glyphicon-flag drop-glyp"></i>Мои
+                                предложения</a></li>
+                            <li><a href="providerMoney.html"><i
+                                    class="glyphicon glyphicon-file drop-glyp"></i>Оплата</a></li>
+                            <li><a href="providerUslugi.html"><i class="glyphicon glyphicon-briefcase drop-glyp"></i>Услуги
+                                и тарифы</a></li>
+                            <li><a href="../login.html"><i class="glyphicon glyphicon-log-in drop-glyp"></i>Выйти</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="main-wrap">
+<div class="main main-uslugi">
+    <div class="stud-prof-main uslugi">
+        <div class="main-title">
+            Личный кабинет <i class="glyphicon glyphicon-menu-right"></i> Страница компании
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 prof-left">
+                <div class="profile_menu">
+                    <div class="prof_m_head">Вита Карась</div>
+                    <a href="providerProfile.html">
+                        <div class="prof_m_paragr"><i class="glyphicon glyphicon-calendar"></i>Панель инструментов</div>
+                    </a>
+                    <a href="providerDesign.html">
+                        <div class="prof_m_paragr active-menu"><i class="glyphicon glyphicon-cog"></i>Страница компании
+                        </div>
+                    </a>
+                    <a href="providerAddProp.html">
+                        <div class="prof_m_paragr"><i class="glyphicon glyphicon-plus"></i>Добавит предложение</div>
+                    </a>
+                    <a href="providerOrders.html">
+                        <div class="prof_m_paragr"><i class="glyphicon glyphicon-list-alt"></i>Заказы<span
+                                class="num-of-zak">3</span></div>
+                    </a>
+                    <a href="providerPropose.html">
+                        <div class="prof_m_paragr"><i class="glyphicon glyphicon-flag"></i>Мои предложения</div>
+                    </a>
+                    <a href="providerMoney.html">
+                        <div class="prof_m_paragr "><i class="glyphicon glyphicon-file"></i>Оплата<span
+                                class="num-of-zak">3</span></div>
+                    </a>
+                    <a href="providerUslugi.html">
+                        <div class="prof_m_paragr last"><i class="glyphicon glyphicon-briefcase"></i>Услуги и тарифы
+                        </div>
+                    </a>
+                </div>
+                <div class="call">
+                    <p>Служба поддержки клиентов</p>
+
+                    <p>тел.: (093) 543 77 47</p>
+
+                    <p>email: studego@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 right-panel">
+                <div class="uslugi-panel">
+                    <div class="green_chapt">
+                        <span class="green_chapt-zag">Страница компании</span>
+                    </div>
+                    <div class="small-menu">
+                        <div class="small-name">
+                            Вита Карась
+                        </div>
+                        <div class="icons-small-menu">
+                            <a href="providerProfile.html"><i class="glyphicon glyphicon-calendar"><span>Панель инструментов</span></i></a>
+                            <a href="providerDesign.html"><i class="glyphicon glyphicon-cog act-small-menu"><span>Страница компании</span></i></a>
+                            <a href="providerAddProp.html"><i
+                                    class="glyphicon glyphicon-plus"><span>Добавит предложение</span></i></a>
+                            <a href="providerOrders.html"><i
+                                    class="glyphicon glyphicon-list-alt"><span>Заказы</span></i></a>
+                            <a href="providerPropose.html"><i
+                                    class="glyphicon glyphicon-flag"><span>Мои предложения</span></i></a>
+                            <a href="providerMoney.html"><i class="glyphicon glyphicon-file"><span>Оплата</span></i></a>
+                            <a href="providerUslugi.html"><i
+                                    class="glyphicon glyphicon-briefcase"><span>Услуги и тарифы</span></i></a>
+                        </div>
+                    </div>
+                    <h3 class="maket-zag">Макет страницы компании</h3>
+
+                    <div class="row offer-main-img-fon designing-page">
+                        <div class="design-page">
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                <div class="fileinput-preview thumbnail new-tub" data-trigger="fileinput">
+                                    <p>Добавте фоновое изображение</p>
+                                </div>
+                                <div class="but-for-foto">
+                        <span class="btn btn-default btn-file"><span class="fileinput-new"><span class="add-foto">Добавить фото</span></span>
+                        <input type="file" name="..."></span>
+                                    <a href="#" class="btn btn-default"><i name="image_3"
+                                                                           class="glyphicon glyphicon-remove del-img"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="logo-firm main-firm">
+                            <div class="table-cell-part">
+                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput">
+                                        <p>Добавте лого</p>
+                                    </div>
+                                    <div class="but-for-foto">
+                        <span class="btn btn-default btn-file"><span class="fileinput-new"><span class="add-foto">Добавить фото</span></span>
+                        <input type="file" name="..."></span>
+                                        <a href="#" class="btn btn-default"><i name="image_3"
+                                                                               class="glyphicon glyphicon-remove del-img"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-firm">
+                            <h1 class="firm-name get_design_firm-name">Название компании</h1>
+
+                            <h2 class="firm-slogan" id="get_design_firm-slogan">Слоган</h2>
+                        </div>
+                        <div class="table-about-firm">
+                            <div class="table-about-firm-inner">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td class="green_ab_t new-gold">Компания:</td>
+                                                    <td class="new-main-color get_design_firm-name">название</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="green_ab_t new-gold">Телефон:</td>
+                                                    <td class="new-main-color" id="get_design_firm-tel">номер телефона
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="green_ab_t new-gold">E-mail:</td>
+                                                    <td class="new-main-color" id="get_design_firm-email">e-mail</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td class="green_ab_t new-gold">Сайт:</td>
+                                                    <td class="saiy new-main-color" id="get_design_firm-page"><a
+                                                            href="https://www.google.com.ua/">сайт</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="green_ab_t new-gold">Адрес:</td>
+                                                    <td class="new-main-color" id="get_design_firm-adress">адрес</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table class="add-design">
+                            <tr>
+                                <td class="green_ab_t">Цвет фонового изображения</td>
+                                <td><input type="text" id="hue-dem" class="demo" data-control="hue" value="#EFEFEF" title="">
+                                </td>
+                                <td class="green_ab_t">Цвет заглавного текста</td>
+                                <td><input type="text" id="hue-de" class="demo" data-control="hue" value="#F92B34" title=""></td>
+                                <td class="green_ab_t">Цвет основного текста</td>
+                                <td><input type="text" id="hue-d" class="demo" data-control="hue" value="#808080" title=""></td>
+                            </tr>
+                        </table>
+                        <div class="col-sm-6">
+                            <table class="design-info">
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Название компании" id="design_firm-name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Слоган" id="design_firm-slogan">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Телефон" id="design_firm-tel">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="E-mail" id="design_firm-email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Сайт" id="design_firm-page">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Адрес" id="design_firm-adress">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-sm-6">
+                            <table class="design-social">
+                                <tr>
+                                    <td class="bold-social">Соц. сети:</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Facebook">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Twitter">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Вконтакте">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Instagram">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="main_inp" placeholder="Google+">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row text-ed">
+                        <textarea name="summernote" id="summernote" cols="30" rows="10" title="">
+                            Описание компании
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+<div class="footer">
+    <div class="main-wrap">
+    <div class="footer-wrap">
+        <div class="footer-icon">
+            <a href="../index.html"><img src="../../img/logo.png"></a>
+        </div>
+        <div class="footer-text row">
+            <div class="col-sm-12 col-md-5 foot-main">
+                Элемент политического процесса, тем более в условиях социально-экономического кризиса, приводит механизм
+                власти.
+                Совершенно неверно полагать, что понятие политического участия отражает механизм власти.
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Компания</li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Конфиденциальность</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Студенту</li>
+                    <li><a href="">Популярные запросы</a></li>
+                    <li><a href="">ТОП-обьявления</a></li>
+                    <li><a href="">Помощь</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Партнерам</li>
+                    <li><a href="">Добавить предложения</a></li>
+                    <li><a href="">Наши услуги</a></li>
+                    <li><a href="">Советы</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-sn">
+            <a href="http://vk.com/studego"><img src="../../img/social/vk.png" class="social"><img
+                    src="../../img/social/vk-a.png" class="social-act"></a>
+            <a href=""><img src="../../img/social/f.png" class="social"><img src="../../img/social/f-a.png"
+                                                                             class="social-act"></a>
+            <a href="https://www.instagram.com/studego/"><img src="../../img/social/inst.png" class="social"><img
+                    src="../../img/social/inst-a.png" class="social-act"></a>
+            <a href=""><img src="../../img/social/g+.png" class="social"><img src="../../img/social/g+-a.png"
+                                                                              class="social-act"></a>
+            <a href=""><img src="../../img/social/tw.png" class="social"><img src="../../img/social/tw-a.png"
+                                                                              class="social-act"></a>
+            <a href=""><img src="../../img/social/yt.png" class="social"><img src="../../img/social/yt-a.png"
+                                                                              class="social-act"></a>
+        </div>
+        <div class="copyright">
+            Copyright © 2015 «Studego.com» является зарегистрированой торговой маркой. Все права защищены
+        </div>
+    </div>
+        </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('#summernote').summernote({height: 300});
+    });
+</script>
+<script src="../../js/simpleMobileMenu.js"></script>
+<script src="../../js/jasny-bootstrap.js"></script>
+</body>
+</html>

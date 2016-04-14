@@ -1,0 +1,623 @@
+@import style_main
+@import navbar
+.cf
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 10000
+    width: 100%
+    margin: 0 auto
+    max-width: 100%
+    padding: 0
+.video-container
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    max-height: 660px
+    overflow: hidden
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -100
+    video
+        width: 100%
+.header
+    min-height: 680px
+    overflow: hidden
+    @extend .no-margin
+    width: $full-width
+    z-index: 10000
+.header-small
+    display: block
+    margin: 0 auto
+    max-width: 750px
+.bs-searchbox .form-control
+    margin-bottom: 10px
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark
+    margin-top: 10px
+.header-main
+    width: 70%
+    text-align: center
+    padding-top: 100px
+    margin: 0 auto
+    h1
+        color: $white-color
+        font-size: 40px
+.popular
+    background: rgba(75,75,75,0.8)
+    width: 70%
+    padding: 10px
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+    text-align: left
+    font-size: 13px
+    cursor: pointer
+    margin: 0 auto
+    max-width: 740px
+    span
+        color: $white-color
+        text-transform: uppercase
+        padding: 0 10px
+        font-weight: normal
+        &:hover
+            text-decoration: underline
+            transition: $transit
+    span.pop-main
+        color: $green-color_hover
+        font-weight: bold
+        &:hover
+            cursor: default
+            text-decoration: none
+.header-search-form
+    width: 70%
+    padding-top: 15px
+    margin: 0 auto
+    max-width: 740px
+.btn-default
+    border-radius: 2px
+    color: #636363
+    background-color: white
+    height: 30px
+    font-size: 15px
+    &:hover
+        color: #636363
+.glyph-search
+    font-size: 13px
+.search-head
+    opacity: 0.9
+.bootstrap-select.btn-group .dropdown-menu
+    width: $full-width
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    margin-top: 10px
+    border-radius: 0
+    border: none
+    z-index: 100
+    background: $light-grey-color
+    li
+        position: relative
+        color: #c8c9cb
+        font-size: 13px
+.btn-group.open .dropdown-toggle
+    -webkit-box-shadow: none
+    box-shadow: none
+    border: none
+.ma
+    margin-right: 3px
+.bootstrap-select .btn:focus
+    outline: none !important
+.header-btn
+    display: inline-block
+    text-align: center
+    background: $red-color
+    padding: 14px 0
+    width: $full-width
+    height: 50px
+    color: $white-color
+    text-transform: uppercase
+    border-top-right-radius: 2px
+    border: none
+    &:hover
+        background: $red-color_hover
+        transition: $transit
+
+.typeahead
+    border: 1px solid $light-grey-color
+    border-top-left-radius: 2px
+    font-size: 16px
+    height: 50px
+    outline: none
+    padding: 8px 12px
+    width: 100%
+    background: rgba(256,256,256,0.8)
+    &:focus
+        border: none
+        outline: none
+.typi
+    border: none
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+    padding: 8px 0
+    margin-top: 0
+    width: 100%
+    background: rgba(256,256,256,0.8)
+.find-count
+    .dropdown-menu
+        border-radius: 0
+        height: 300px
+        overflow: hidden
+        overflow-y: scroll
+.tt-suggestion
+    font-size: 14px
+    line-height: 24px
+    padding: 3px 10px
+    font-weight: normal
+    color: $text-color
+.tt-suggestion.tt-is-under-cursor
+    background-color: $green-color
+    color: #FFFFFF
+.header-more-btn-sm table tr td
+    padding: 0 5px
+    line-height: 16px
+.bootstrap-select > .dropdown-toggle
+    border-top-left-radius: 2px
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+.header-btn-s
+    @extend .header-btn
+    display: none
+    float: left
+    padding: 14px 5px
+.header-three
+    margin: 0 auto
+    clear: both
+    padding-bottom: 25px
+.header-three-btn
+    background: rgba(18, 96, 91, 0.8)
+    color: $white-color
+    border-radius: 3px
+    text-align: center
+    padding: 16px 35px
+    margin-right: 10px
+    margin-top: 25px
+    display: inline-block
+    cursor: pointer
+    font-size: 15px
+    img.header-three-btn-sm
+        display: none
+    &:hover
+        background: rgba(0, 169, 157, 0.8)
+        transition: $transit
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus
+    color: $white-color
+    background: rgba(0, 169, 157, 0.8)
+.bs-searchbox input:focus
+    outline: 0
+    box-shadow: none
+    border: 1px solid $light-grey-color
+.bootstrap-select.btn-group .dropdown-menu li a.opt
+    padding-left: 23px
+.icon-table
+    height: $full-width
+    max-width: 120px
+    img
+        width: 32px
+.header-btn-shown-1,.header-btn-shown-2,.header-btn-shown-3
+    width: $full-width
+    height: $full-width
+    clear: both
+    margin-bottom: 15px
+    transition: opacity 2s ease
+    -webkit-transition: opacity 500ms linear
+.header-icon-nav
+    width: $full-width
+    min-height: 280px
+.header-more-btn-sm
+    @extend .header-three-btn
+    margin: 0 auto
+    min-width: 100px
+    height: 55px
+    padding: 0
+    margin-right: 15px
+    margin-bottom: 15px
+    overflow: hidden
+    font-size: 13px
+a .header-more-btn-sm
+    &:focus
+        outline: none!important
+        box-shadow: none!important
+        border: 0!important
+    &::-moz-focus-outer
+        border: 0!important
+        outline: none!important
+        box-shadow: none!important
+.ukraine img
+    width: 30px
+.header-search-form .col-xs-10
+    padding: 0
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+    width: $full-width
+.bootstrap-select.btn-group .dropdown-menu
+    background-color: $light-grey-color
+    margin-top: -2px
+.head-sort-btn
+    display: inline-block
+    color: $white-color
+    padding: 5px 10px
+    font-size: 13px
+    margin-left: 30px
+.active
+    border: none
+    border-radius: 3px
+.header-sort
+    margin-top: 10px
+    margin-bottom: 10px
+.search-panel
+    width: 70%
+    margin: 0 auto
+    max-width: 740px
+    .col-xs-8, .col-xs-4
+        padding: 0
+    table
+        margin: 0 auto
+        width: 100%
+        padding: 0
+        tr, td
+            padding: 0
+            margin: 0
+            text-align: left
+        td.search-panel-icon
+            vertical-align: top
+            text-align: right
+            img
+                padding-right: 10px
+                width: 50px
+    h3
+        color: $white-color
+        font-size: 15px
+        padding: 0
+        margin: 0 0 8px
+    input
+        background: rgba(255,255,255,0.7)
+        border: none
+        padding: 5px
+        margin: 0
+        height: 30px
+        width: 100%
+        color: black
+        border-top-left-radius: 2px
+        border-bottom-left-radius: 2px
+    button
+        text-align: center
+        background: rgba(249, 43, 52, 0.8)
+        padding: 6px 10px
+        color: white
+        font-size: 13px
+        border: none
+        width: 100%
+        max-width: 120px
+        border-top-right-radius: 2px
+        border-bottom-right-radius: 2px
+        text-transform: uppercase
+        &:hover
+            transition: $transit
+            background: rgba(249, 43, 52, 0.9)
+.header-icons
+    margin: 0 auto
+    width: 100%
+    height: 100px
+    margin-top: 30px
+    .wrap
+        width: 60%
+        margin: 0 auto
+    span
+        display: inline-block
+        color: #252525
+        font-weight: bold
+.big-height
+    height: 100%
+    cursor: default
+.ic span
+    margin-top: 38px
+.header-icon
+    margin: 0 auto
+    display: inline-block
+    padding: 0
+    height: 85px
+.header-sp-inf
+    color: #63656a
+    font-weight: bold
+    font-size: 15px
+    text-align: center
+.alert
+    padding: 10px
+    margin: 10px 0
+    border: 1px solid transparent
+    border-radius: 2px
+    width: 100%
+    line-height: 18px
+    font-size: 13px
+    i
+        margin-right: 3px
+.error-input
+    background-color: #f2dede !important
+    border: 1px solid #a94442 !important
+h2.index-zaglav
+    color: #363636
+    font-size: 25px
+    margin: 70px 0 40px 0
+.main-all-wait
+    @extend .no-margin
+    width: $full-width
+    height: 400px
+    background-image: url("../img/banner.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    background-position: center 50%
+.main-all-wait-text
+    margin: 0 auto
+    padding: 0 10px
+    margin-top: 140px
+    text-align: center
+    h3
+        color: $white-color
+        font-weight: bold
+        font-size: 30px
+    h4
+        color: $white-color
+        font-size: 18px
+        line-height: 20px
+.index-reg-but
+    color: $white-color
+    background: $red-color
+    font-size: 18px
+    text-align: center
+    border-radius: 50px
+    border: none
+    padding: 10px 40px 13px 40px
+    margin-top: 20px
+    &:hover
+        background: $red-color_hover
+        transition: $transit
+.main-partner
+    width: 70%
+    @extend .no-margin
+    text-align: center
+    height: auto
+    margin-bottom: 50px
+    h2
+        color: #363636
+        font-size: 25px
+        margin: 40px 0 0 0
+.main-partner-icons
+    width: 100%
+    height: auto
+.partner-icons-cont
+    width: 150px
+    height: 150px
+    display: inline-block
+    margin: 10px
+    text-align: center
+    resize: both
+    position: relative
+.in-foto
+    transform: translate(-50%, -50%)
+    position: absolute
+    top: 50%
+    left: 50%
+.img-responsive-w
+    display: block
+    max-width: 130px
+    height: auto
+.main-atr
+    @extend .main-all-wait
+    min-height: 400px
+    background-image: url("../img/main-cont-back.jpg")
+.main-atr-cont
+    width: 60%
+    margin: 0 auto
+    text-align: center
+    margin-top: 70px
+    h2
+        font-size: 23px
+        font-weight: bold
+        margin-bottom: 40px
+.find
+    padding: 0
+    text-align: left
+    @media (max-width: 1300px)
+    .header-search-form
+        width: 85%
+    .popular
+        width: 85%
+.all-part
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    text-decoration: underline
+    font-size: 16px
+    color: $text-color
+    &:hover
+        color: $green-color
+        transition: $transit
+@media (max-width: 1200px)
+    .video-container, .video-cont
+        video
+            width: auto
+@media (max-width: 768px)
+    .video-container, .video-cont
+        video
+            display: none!important
+        img
+            display: block!important
+@media (max-width: 1070px)
+    .main-content
+        width: 80%
+
+    .header-icons .wrap
+        width: 80%
+@media (max-width: 1400px)
+    h2.index-zaglav
+        margin: 40px 0
+    .search-panel
+        display: none
+    .header-icons
+        margin-top: -150px
+        height: 120px
+        background-color: rgba(256,256,256,0.5)
+        .wrap
+            width: 80%
+            padding: 10px 0
+    .header-icon
+        height: 70px
+    .video-container
+        max-height: 650px
+@media (max-width: 930px)
+    .header-search-form
+        margin-top: -5px
+    .header-icons
+        margin-top: -230px
+        height: 125px
+        background-color: rgba(256,256,256,0.5)
+        .wrap
+            width: 90%
+            padding: 10px 0
+    .header-main
+        width: 90%
+        h1
+            margin-top: 20px
+            font-size: 30px
+    .video-container
+        max-height: 650px
+    .header
+        min-height: 760px
+    .header-icon
+        height: 70px
+@media (max-width: 1160px)
+    .header-btn
+        display: none
+    .header-btn-s
+        display: block
+@media (max-width: 500px)
+    .glyphicon-ok:before
+        display: none
+@media (max-width: 400px)
+    .btn-default
+        font-size: 13px
+    .glyph-search
+        font-size: 10px
+    .dropdown-menu>li>a
+        font-size: 12px
+@media (max-width: 768px)
+    h2.index-zaglav
+        margin: 30px 0 20px 0
+    .header-search-form
+        width: 90%
+    .search-head
+        opacity: 1
+    .header-three-btn
+        padding: 15px 15px
+        span
+            display: none
+        img.header-three-btn-sm
+            display: block
+            width: 30px
+    .header-more-btn-sm-text
+        display: none
+    .popular
+        display: none
+    .header-more-btn-sm
+        margin-right: 5px
+        margin-bottom: 5px
+        min-width: 50px
+        height: 50px
+        display: inline-block
+        padding: 0
+    .search-panel-icon
+        display: none
+    .search-panel
+        width: 90%
+        table
+            margin: 0 auto
+    .icon-table
+        height: 100%
+        width: 100%
+    .header-small
+        display: block
+        max-width: 350px
+        margin: 0 auto
+    .header-icons
+        display: none
+    .video-container
+        max-height: 560px
+    .header
+        min-height: 580px
+    .header-icon-nav
+        min-height: 260px
+@media (max-width: 400px)
+    .search-panel
+        width: 100%
+        .col-xs-8
+            width: 50%
+        .col-xs-4
+            width: 50%
+@media (max-width: 640px)
+    .main-all-wait
+        height: 250px
+    .main-all-wait-text
+        margin-top: 70px
+        h3
+            font-size: 20px
+        h4
+            font-size: 15px
+    .index-reg-but
+        margin-top: 5px
+@media (max-width: 438px)
+    .main-all-wait-text
+        margin-top: 60px
+    .index-reg-but
+        margin-top: 0
+@media (max-width: 900px)
+    .main-atr-cont
+        width: 90%
+@media (max-width: 768px)
+    .partner-icons-cont
+        width: 100px
+        height: 100px
+    .main-partner
+        width: 90%
+    .img-responsive-w
+        max-width: 80px
+@media (max-width: 500px)
+    .main-atr
+        min-height: 300px
+    .header-icon
+        height: 60px
+    .header-sp-inf
+        font-size: 13px
+    .index-reg-but
+        margin-top: 10px
+    .main-atr-cont
+        margin-top: 45px
+        h2
+            font-size: 18px
+            margin-bottom: 30px
+@media (max-width: 385px)
+    .main-atr-cont
+        margin-top: 35px
+        h2
+            font-size: 18px
+            margin-bottom: 30px
+    .main-atr-cont.header-icon
+        height: 50px
+    .index-reg-but
+        margin-top: 5px
+        font-size: 15px
+        padding: 8px 15px
+.header-2-s, .header-3-s
+    display: none
+.active-header
+    background-color: #00a99d
+

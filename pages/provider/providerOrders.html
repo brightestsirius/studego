@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>studego</title>
+    <link rel="icon" type="image/png" href="../../img/brows-icon.ico" class="web-icon">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="../../js/jquery-1.11.3.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="../../js/provider-order.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+<body>
+<div class="mf" id="mf">
+    <div class="in-menu">
+        <a href="../index.html">
+            <div class="logo"><img src="../../img/logo.png"></div>
+        </a>
+        <div class="navigation">
+            <nav>
+                <a href="javascript:void(0)" class="smobitrigger ion-navicon-round"><span>Menu</span></a>
+                <ul class="nav navbar-nav navbar-right mobimenu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Помощь <span class="caret"></span></a>
+                        <ul class="dropdown-menu navi">
+                            <li><a href=""><i class="glyphicon glyphicon-heart-empty drop-glyp"></i>О нас</a></li>
+                            <li><a href=""><i class="glyphicon glyphicon-thumbs-up drop-glyp"></i>Как это работает</a>
+                            </li>
+                            <li><a href=""><i class="glyphicon glyphicon-home drop-glyp"></i>Контакты</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Избранное <span class="glyphicon glyphicon-star-empty"
+                                                                 style="margin-left: 3px;"></span></a>
+                        <ul class="dropdown-menu navi">
+                            <li><a href="providerAddProp.html"><span class="act-menu provider-act-addprop"><i
+                                    class="glyphicon glyphicon-plus drop-glyp"></i>Добавить предложение</span></a></li>
+                            <li><a href="providerProfile.html"><i class="glyphicon glyphicon-calendar drop-glyp"></i>Панель
+                                управления</a></li>
+                            <li><a href="providerOrders.html"><i class="glyphicon glyphicon-cog drop-glyp"></i>Страница
+                                компании</a></li>
+                            <li><a href="providerOrders.html"><i class="glyphicon glyphicon-list-alt drop-glyp"></i>Заказы</a>
+                            </li>
+                            <li><a href="providerPropose.html"><i class="glyphicon glyphicon-flag drop-glyp"></i>Мои
+                                предложения</a></li>
+                            <li><a href="providerMoney.html"><i
+                                    class="glyphicon glyphicon-file drop-glyp"></i>Оплата</a></li>
+                            <li><a href="providerUslugi.html"><i class="glyphicon glyphicon-briefcase drop-glyp"></i>Услуги
+                                и тарифы</a></li>
+                            <li><a href="../login.html"><i class="glyphicon glyphicon-log-in drop-glyp"></i>Выйти</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="main-wrap">
+    <div class="main">
+        <div class="stud-prof-main row">
+            <div class="main-title">
+                Личный кабинет <i class="glyphicon glyphicon-menu-right"></i> Заказы
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 prof-left">
+                    <div class="profile_menu">
+                        <div class="prof_m_head">Вита Карась</div>
+                        <a href="providerProfile.html">
+                            <div class="prof_m_paragr"><i class="glyphicon glyphicon-calendar"></i>Панель инструментов
+                            </div>
+                        </a>
+                        <a href="providerDesign.html">
+                            <div class="prof_m_paragr active-menu"><i class="glyphicon glyphicon-cog"></i>Страница
+                                компании
+                            </div>
+                        </a>
+                        <a href="providerAddProp.html">
+                            <div class="prof_m_paragr"><i class="glyphicon glyphicon-plus"></i>Добавит предложение</div>
+                        </a>
+                        <a href="providerOrders.html">
+                            <div class="prof_m_paragr active-menu"><i
+                                    class="glyphicon glyphicon-list-alt"></i>Заказы<span class="num-of-zak">3</span>
+                            </div>
+                        </a>
+                        <a href="providerPropose.html">
+                            <div class="prof_m_paragr"><i class="glyphicon glyphicon-flag"></i>Мои предложения</div>
+                        </a>
+                        <a href="providerMoney.html">
+                            <div class="prof_m_paragr "><i class="glyphicon glyphicon-file"></i>Оплата<span
+                                    class="num-of-zak">3</span></div>
+                        </a>
+                        <a href="providerUslugi.html">
+                            <div class="prof_m_paragr last"><i class="glyphicon glyphicon-briefcase"></i>Услуги и тарифы
+                            </div>
+                        </a>
+                    </div>
+                    <div class="call">
+                        <p>Служба поддержки клиентов</p>
+
+                        <p>тел.: (093) 543 77 47</p>
+
+                        <p>email: studego@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 right-panel">
+                    <div class="green_chapt">
+                        <span class="green_chapt-zag">Заказы</span>
+                    </div>
+                    <div class="small-menu">
+                        <div class="small-name">
+                            Вита Карась
+                        </div>
+                        <div class="icons-small-menu">
+                            <a href="providerProfile.html"><i class="glyphicon glyphicon-calendar"><span>Панель инструментов</span></i></a>
+                            <a href="providerDesign.html"><i
+                                    class="glyphicon glyphicon-cog"><span>Страница компании</span></i></a>
+                            <a href="providerAddProp.html"><i
+                                    class="glyphicon glyphicon-plus"><span>Добавит предложение</span></i></a>
+                            <a href="providerOrders.html"><i class="glyphicon glyphicon-list-alt act-small-menu"><span>Заказы</span></i></a>
+                            <a href="providerPropose.html"><i
+                                    class="glyphicon glyphicon-flag"><span>Мои предложения</span></i></a>
+                            <a href="providerMoney.html"><i class="glyphicon glyphicon-file"><span>Оплата</span></i></a>
+                            <a href="providerUslugi.html"><i
+                                    class="glyphicon glyphicon-briefcase"><span>Услуги и тарифы</span></i></a>
+                        </div>
+                    </div>
+                    <div class="row provider-zak" id="offer-1">
+                        <a href="../offer.html">
+                            <div class="col-xs-12 info-fav">
+                                <p class="zakaz">Заказ №1</p>
+                                <table>
+                                    <tr>
+                                        <td class="right-table-font">Предложение:</td>
+                                        <td><a href="../search.html">Поездка в Лондон</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">ФИО:</td>
+                                        <td><a href="../search.html">Вита Карась</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">Телефон:</td>
+                                        <td>093 543 77 47</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">E-mail:</td>
+                                        <td>vita_karas@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">Дата:</td>
+                                        <td>07.03.2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">Сообщение:</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <div class="zakaz-opus">
+                                    Phasellus fringilla arcu nec mi interdum, sit amet commodo lacus tincidunt. D
+                                    uis scelerisque, arcu pharetra blandit accumsan, nibh felis egestas odio.
+                                    euismod hendrerit ligula vel pharetra. Maecenas blandit at quam non efficitur.
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="del-line">
+                            <div class="col-xs-7 col-sm-10 line-pad">
+                                <hr>
+                            </div>
+                            <div class="col-xs-5 col-sm-2 line">
+                                <button name="offer-1" class="del-offer"><i class="fa fa-times-circle-o"
+                                                                            style="margin-right: 5px;"></i>Удалить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row provider-zak" id="offer-2">
+                        <a href="../offer.html">
+                            <div class="col-xs-12 info-fav">
+                                <p class="zakaz">Заказ №2</p>
+                                <table>
+                                    <tr>
+                                        <td class="right-table-font">Предложение:</td>
+                                        <td><a href="../search.html">Поездка в Лондон</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">ФИО:</td>
+                                        <td><a href="../search.html">Вита Карась</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">Телефон:</td>
+                                        <td>093 543 77 47</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">E-mail:</td>
+                                        <td>vita_karas@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">Дата:</td>
+                                        <td>07.03.2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right-table-font">Сообщение:</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <div class="zakaz-opus">
+                                    Phasellus fringilla arcu nec mi interdum, sit amet commodo lacus tincidunt. D
+                                    uis scelerisque, arcu pharetra blandit accumsan, nibh felis egestas odio.
+                                    euismod hendrerit ligula vel pharetra. Maecenas blandit at quam non efficitur.
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="del-line">
+                            <div class="col-xs-7 col-sm-10 line-pad">
+                                <hr>
+                            </div>
+                            <div class="col-xs-5 col-sm-2 line">
+                                <button name="offer-2" class="del-offer"><i class="fa fa-times-circle-o"
+                                                                            style="margin-right: 5px;"></i>Удалить
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="main-wrap">
+        <div class="footer-wrap">
+            <div class="footer-icon">
+                <a href="../index.html"><img src="../../img/logo.png"></a>
+            </div>
+            <div class="footer-text row">
+                <div class="col-sm-12 col-md-5 foot-main">
+                    Элемент политического процесса, тем более в условиях социально-экономического кризиса, приводит
+                    механизм власти.
+                    Совершенно неверно полагать, что понятие политического участия отражает механизм власти.
+                </div>
+                <div class="col-sm-12 col-md-2 foot-sec">
+                    <ul>
+                        <li class="footer-ul-top">Компания</li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Конфиденциальность</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-2 foot-sec">
+                    <ul>
+                        <li class="footer-ul-top">Студенту</li>
+                        <li><a href="">Популярные запросы</a></li>
+                        <li><a href="">ТОП-обьявления</a></li>
+                        <li><a href="">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-2 foot-sec">
+                    <ul>
+                        <li class="footer-ul-top">Партнерам</li>
+                        <li><a href="">Добавить предложения</a></li>
+                        <li><a href="">Наши услуги</a></li>
+                        <li><a href="">Советы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-sn">
+                <a href="http://vk.com/studego"><img src="../../img/social/vk.png" class="social"><img
+                        src="../../img/social/vk-a.png" class="social-act"></a>
+                <a href=""><img src="../../img/social/f.png" class="social"><img src="../../img/social/f-a.png"
+                                                                                 class="social-act"></a>
+                <a href="https://www.instagram.com/studego/"><img src="../../img/social/inst.png" class="social"><img
+                        src="../../img/social/inst-a.png" class="social-act"></a>
+                <a href=""><img src="../../img/social/g+.png" class="social"><img src="../../img/social/g+-a.png"
+                                                                                  class="social-act"></a>
+                <a href=""><img src="../../img/social/tw.png" class="social"><img src="../../img/social/tw-a.png"
+                                                                                  class="social-act"></a>
+                <a href=""><img src="../../img/social/yt.png" class="social"><img src="../../img/social/yt-a.png"
+                                                                                  class="social-act"></a>
+            </div>
+            <div class="copyright">
+                Copyright © 2015 «Studego.com» является зарегистрированой торговой маркой. Все права защищены
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/simpleMobileMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>studego</title>
+    <link rel="icon" type="image/png" href="../img/brows-icon.ico" class="web-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-select.js"></script>
+    <script src="../js/tapered.js"></script>
+    <script src="../js/search.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="page">
+<div class="header">
+    <div class="cf" id="cf">
+        <div class="in-menu">
+            <a href="index.html">
+                <div class="logo"><img src="../img/logo.png"></div>
+            </a>
+            <div class="navigation">
+                <nav>
+                    <a href="javascript:void(0)" class="smobitrigger ion-navicon-round"><span>Menu</span></a>
+                    <ul class="nav navbar-nav navbar-right mobimenu">
+                        <li class="search-li">
+                            <form method="get" id="search">
+                                <input name="q" type="text" size="40" placeholder="Поиск"/>
+                            </form>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Помощь <span class="caret"></span></a>
+                            <ul class="dropdown-menu navi mobimenu">
+                                <li><a href=""><i class="glyphicon glyphicon-heart-empty drop-glyp"></i>О нас</a></li>
+                                <li><a href=""><i class="glyphicon glyphicon-thumbs-up drop-glyp"></i>Как это
+                                    работает</a></li>
+                                <li><a href=""><i class="glyphicon glyphicon-home drop-glyp"></i>Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="provider/providerProfile.html" class="dropdown-toggle" role="button">Вход<i
+                                    class="fa fa-user"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <video poster="../video/Yes-No.jpg" autoplay loop controls tabindex="0" id="backg-video">
+            <source src="../video/Yes-No.mp4" id="bg-video" type='video/mp4 codecs="avc1.42E01E, mp4a.40.2"'/>
+            <source src="../video/Yes-No.webm" type='video/webm codecs="vp8, vorbis"'/>
+        </video>
+        <div id="bak_img"><img src="../img/san-frans.jpg" id="back_img"></div>
+    </div>
+    <div class="main-wrap">
+    <div class="header-main">
+        <h1>Откройте для себя новые границы</h1>
+        <div class="header-search-form row">
+            <div class="col-xs-10 find-count">
+            <input id="find-main" type="text" class="typeahead tt-query" placeholder="Введите ключевые слова" autocomplete="off" />
+            </div>
+            <div class="col-xs-2 find">
+                <a href=""><button class="header-btn">поиск</button></a>
+                <a href=""><button class="header-btn-s"><i class="glyphicon glyphicon-search"></i></button></a>
+            </div>
+        </div>
+        <div class="header-icon-nav">
+            <div class="header-three">
+                <div class="header-three-btn header-func header-btn-1 active-header" name="header-btn-1"><img class="header-three-btn-sm" src="../img/party.png"><span>Развлечения</span></div>
+                <div class="header-three-btn header-func header-btn-2" name="header-btn-2"><img class="header-three-btn-sm" src="../img/plani.png"><span>Путешествия</span></div>
+                <div class="header-three-btn header-func header-btn-3" name="header-btn-3"><img class="header-three-btn-sm" src="../img/book.png"><span>Саморазвитие</span></div>
+            </div>
+            <div class="header-btn-1-shown header-1-s header-small">
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/music.png"></td>
+                            <td class="header-more-btn-sm-text">Клубы</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/food.png"></td>
+                            <td class="header-more-btn-sm-text">Бары</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/rest.png"></td>
+                            <td class="header-more-btn-sm-text">Кафе/Рестораны</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/art.png"></td>
+                            <td class="header-more-btn-sm-text">Активный отдых</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/danger.png"></td>
+                            <td class="header-more-btn-sm-text">Адреналин</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/shutter.png"></td>
+                            <td class="header-more-btn-sm-text">Шутеры</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/shapes.png"></td>
+                            <td class="header-more-btn-sm-text">Кинотеатры</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/check.png"></td>
+                            <td class="header-more-btn-sm-text">События</td>
+                        </tr>
+                    </table>
+                </div></a>
+            </div>
+            <div class="header-btn-2-shown header-2-s header-small">
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/transport.png"></td>
+                            <td class="header-more-btn-sm-text">Автобусные туры</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/plane.png"></td>
+                            <td class="header-more-btn-sm-text">Авиатуры</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/summer.png"></td>
+                            <td class="header-more-btn-sm-text">Туры выходного дня</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/map.png"></td>
+                            <td class="header-more-btn-sm-text">Путешествия за границу</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td class="ukraine"><img src="../img/icons/ukraina_gerb.png"></td>
+                            <td class="header-more-btn-sm-text">Туры по Украине</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/mountain.png"></td>
+                            <td class="header-more-btn-sm-text">Походы в горы</td>
+                        </tr>
+                    </table>
+                </div></a>
+            </div>
+            <div class="header-btn-3-shown  header-2-s header-small">
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/buss.png"></td>
+                            <td class="header-more-btn-sm-text">Курсы</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/technology.png"></td>
+                            <td class="header-more-btn-sm-text">Тренинги</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/swim.png"></td>
+                            <td class="header-more-btn-sm-text">Спорт</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/micro.png"></td>
+                            <td class="header-more-btn-sm-text">Музыка</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/dancing.png"></td>
+                            <td class="header-more-btn-sm-text">Танцы</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/business.png"></td>
+                            <td class="header-more-btn-sm-text">Стажировка</td>
+                        </tr>
+                    </table>
+                </div></a>
+                <a href="search.html"><div class="header-more-btn-sm">
+                    <table class="icon-table">
+                        <tr>
+                            <td><img src="../img/icons/travel.png"></td>
+                            <td class="header-more-btn-sm-text">Молодежные программы</td>
+                        </tr>
+                    </table>
+                </div></a>
+            </div>
+        </div>
+        <div class="search-panel">
+            <table>
+                <tr>
+                    <td rowspan="2" class="search-panel-icon"><img src="../img/icons/love.png"></td>
+                    <td colspan="2"><h3>Узнавай о новых проектах и возможностях первым</h3></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="col-xs-8">
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="col-xs-4">
+                            <button>подписаться</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="main-wrap">
+<div class="main">
+    <div class="header-icons">
+        <div class="wrap">
+                <div class="col-xs-4 big-height">
+                    <p class="text-center ic">
+                        <img src="../img/icons/person.png" class="header-icon">
+                        <p class="header-sp-inf">Все для студентов</p>
+
+                </div>
+                <div class="col-xs-4 big-height">
+                    <p class="text-center ic">
+                        <img src="../img/icons/pin.png" class="header-icon">
+                        <p class="header-sp-inf">Находи, что искал</p>
+
+                </div>
+                <div class="col-xs-4 big-height">
+                    <p class="text-center ic">
+                        <img src="../img/icons/find.png" class="header-icon">
+                        <p class="header-sp-inf">Познавай мир</p>
+
+                </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2 class="index-zaglav">Горячие обьявления</h2>
+        <div id="container">
+            <ul id="myContent">
+                <li><a href="offer.html"><div class="cont-img">
+                    <img src="../img/breakfast.jpg">
+                    <h3>Скидки на завтраки для студентов</h3>
+                </div></a></li>
+                <li><a href="offer.html"><div class="cont-img">
+                    <img src="../img/breakfast.jpg">
+                    <h3>Sales</h3>
+                </div></a></li>
+                <li><a href="offer.html"><div class="cont">
+                    <img src="../img/main-cont-2.jpg" class="img-responsive">
+                    <h2>Поездка в Бахрейн</h2>
+                    <p>Бахрейн, несмотря на то, что в воскресенье некоторые станции метро закрыты, просветляет живописный вечнозеленый кустарник.
+                        Динарское нагорье, несмотря на внешние воздействия, ежегодно.
+                    </p>
+                    <div class="data-inf">
+                        <div class="data-inf-cont"><i class="glyphicon glyphicon-map-marker"></i>Киев</div>
+                        <div class="data-inf-cont"><i class="glyphicon glyphicon-usd"></i>1000 грн.</div>
+                        <div class="data-inf-cont">
+                            <table>
+                                <tr>
+                                    <td><i class="glyphicon glyphicon-calendar"></i></td>
+                                    <td>Начало 11.11.2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="data-inf-cont">
+                            <table>
+                                <tr>
+                                    <td><i class="glyphicon glyphicon-calendar"></i></td>
+                                    <td>Окончание 11.11.2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div></a></li>
+                <li><a href="offer.html"><div class="cont-red">
+                    <div class="cont-back-icon">
+                        <i class="glyphicon glyphicon-cutlery"></i>
+                    </div>
+                    <h2>Скидки для студентов на все напитки в пабе</h2>
+                    <p>Бахрейн, несмотря на то, что в воскресенье некоторые.
+                    </p>
+                    <div class="data-inf">
+                        <div class="data-inf-cont"><i class="glyphicon glyphicon-map-marker"></i>Киев</div>
+                        <div class="data-inf-cont"><i class="glyphicon glyphicon-usd"></i>1000 грн.</div>
+                        <div class="data-inf-cont">
+                            <table>
+                                <tr>
+                                    <td><i class="glyphicon glyphicon-calendar"></i></td>
+                                    <td>Начало 11.11.2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="data-inf-cont">
+                            <table>
+                                <tr>
+                                    <td><i class="glyphicon glyphicon-calendar"></i></td>
+                                    <td>Окончание 11.11.2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div></a></li>
+                <li><a href="offer.html"><div class="cont-img">
+                    <img src="../img/breakfast.jpg">
+                    <h3>Скидки на завтраки для студентов</h3>
+                </div></a></li>
+                <li><a href="offer.html"><div class="cont-img">
+                    <img src="../img/breakfast.jpg">
+                    <h3>Sales</h3>
+                </div></a></li>
+                <li><a href="offer.html"><div class="cont">
+                    <img src="../img/main-cont-2.jpg" class="img-responsive">
+                    <h2>Поездка в Бахрейн</h2>
+                    <p>Бахрейн, несмотря на то, что в воскресенье некоторые станции метро закрыты, просветляет живописный вечнозеленый кустарник.
+                        Динарское нагорье, несмотря на внешние воздействия, ежегодно.
+                    </p>
+                    <div class="data-inf">
+                        <div class="data-inf-cont"><i class="glyphicon glyphicon-map-marker"></i>Киев</div>
+                        <div class="data-inf-cont"><i class="glyphicon glyphicon-usd"></i>1000 грн.</div>
+                        <div class="data-inf-cont">
+                            <table>
+                                <tr>
+                                    <td><i class="glyphicon glyphicon-calendar"></i></td>
+                                    <td>Начало 11.11.2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="data-inf-cont">
+                            <table>
+                                <tr>
+                                    <td><i class="glyphicon glyphicon-calendar"></i></td>
+                                    <td>Окончание 11.11.2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div></a></li>
+                <li><a href="offer.html"><div class="cont-red">
+                    <div class="cont-back-icon">
+                        <i class="glyphicon glyphicon-cutlery"></i>
+                    </div>
+                    <h2>Скидки для студентов на все напитки в пабе</h2>
+                    <p>Бахрейн, несмотря на то, что в воскресенье некоторые.
+                    </p>
+                    <div class="data-inf">
+                        <div class="data-inf-cont"><i class="glyphicon glyphicon-map-marker"></i>Киев</div>
+                        <div class="data-inf-cont"><i class="glyphicon glyphicon-usd"></i>1000 грн.</div>
+                        <div class="data-inf-cont">
+                            <table>
+                                <tr>
+                                    <td><i class="glyphicon glyphicon-calendar"></i></td>
+                                    <td>Начало 11.11.2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="data-inf-cont">
+                            <table>
+                                <tr>
+                                    <td><i class="glyphicon glyphicon-calendar"></i></td>
+                                    <td>Окончание 11.11.2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-all-wait">
+        <div class="main-all-wait-text">
+            <h3>Не пропустите то, чего вы так долго ждали!</h3>
+            <h4>Регистрируйся и подписывайся! Событие само вас найдет</h4>
+            <a href="registration.html"><button class="index-reg-but">Регистрация</button></a>
+        </div>
+    </div>
+    <div class="main-partner">
+        <h2 class="index-zaglav">Партнеры</h2>
+        <div class="main-partner-icons">
+            <a href="aboutProvider.html"><div class="partner-icons-cont">
+                <div class="in-foto"><img src="../img/m-icon-1.png" class="img-responsive-w"></div>
+            </div></a>
+            <a href="aboutProvider.html"><div class="partner-icons-cont">
+                <div class="in-foto"><img src="../img/m-icon-1.png" class="img-responsive-w"></div>
+            </div></a>
+            <a href="aboutProvider.html"><div class="partner-icons-cont">
+                <div class="in-foto"><img src="../img/m-icon-1.png" class="img-responsive-w"></div>
+            </div></a>
+            <a href="aboutProvider.html"><div class="partner-icons-cont">
+                <div class="in-foto"><img src="../img/m-icon-1.png" class="img-responsive-w"></div>
+            </div></a>
+            <a href="aboutProvider.html"><div class="partner-icons-cont">
+                <div class="in-foto"><img src="../img/m-icon-1.png" class="img-responsive-w"></div>
+            </div></a>
+            <a href="aboutProvider.html"><div class="partner-icons-cont">
+                <div class="in-foto"><img src="../img/m-icon-1.png" class="img-responsive-w"></div>
+            </div></a>
+            <a href="aboutProvider.html"><div class="partner-icons-cont">
+                <div class="in-foto"><img src="../img/m-icon-1.png" class="img-responsive-w"></div>
+            </div></a>
+            <a href="aboutProvider.html"><div class="partner-icons-cont">
+                <div class="in-foto"><img src="../img/m-icon-1.png" class="img-responsive-w"></div>
+            </div></a>
+        </div>
+        <a href="allPartners.html"><div class="all-part">Поиск по партнерам</div></a>
+    </div>
+    <div class="main-atr">
+        <div class="main-atr-cont">
+            <h2>Что дает вам размещение объявлений?</h2>
+            <div class="wrap">
+                <a href="">
+                    <div class="col-xs-4">
+                        <p class="text-center">
+                            <img src="../img/icons/atract.png" class="header-icon">
+                        <p class="header-sp-inf">Привлекайте людей</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-xs-4">
+                        <p class="text-center">
+                            <img src="../img/icons/clock.png" class="header-icon">
+                        <p class="header-sp-inf">Экономьте время</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col-xs-4">
+                        <p class="text-center">
+                            <img src="../img/icons/arrow.png" class="header-icon">
+                        <p class="header-sp-inf">Улучшайте свой бизнес</p>
+                    </div>
+                </a>
+            </div>
+            <a href="login.html"><button class="index-reg-but">Разместить обьявление</button></a>
+        </div>
+    </div>
+</div>
+    </div>
+<div class="footer">
+    <div class="main-wrap">
+    <div class="footer-wrap">
+        <div class="footer-icon">
+            <a href="index.html"><img src="../img/logo.png"></a>
+        </div>
+        <div class="footer-text row">
+            <div class="col-sm-12 col-md-5 foot-main">
+                Элемент политического процесса, тем более в условиях социально-экономического кризиса, приводит механизм власти.
+                Совершенно неверно полагать, что понятие политического участия отражает механизм власти.
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Компания</li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Конфиденциальность</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Студенту</li>
+                    <li><a href="">Популярные запросы</a></li>
+                    <li><a href="">ТОП-обьявления</a></li>
+                    <li><a href="">Помощь</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Партнерам</li>
+                    <li><a href="">Добавить предложения</a></li>
+                    <li><a href="">Наши услуги</a></li>
+                    <li><a href="">Советы</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-sn">
+            <a href="http://vk.com/studego"><img src="../img/social/vk.png" class="social"><img src="../img/social/vk-a.png" class="social-act"></a>
+            <a href=""><img src="../img/social/f.png" class="social"><img src="../img/social/f-a.png" class="social-act"></a>
+            <a href="https://www.instagram.com/studego/"><img src="../img/social/inst.png" class="social"><img src="../img/social/inst-a.png" class="social-act"></a>
+            <a href=""><img src="../img/social/g+.png" class="social"><img src="../img/social/g+-a.png" class="social-act"></a>
+            <a href=""><img src="../img/social/tw.png" class="social"><img src="../img/social/tw-a.png" class="social-act"></a>
+            <a href=""><img src="../img/social/yt.png" class="social"><img src="../img/social/yt-a.png" class="social-act"></a>
+        </div>
+        <div class="copyright">
+            Copyright © 2015 «Studego.com» является зарегистрированой торговой маркой. Все права защищены
+        </div>
+    </div>
+        </div>
+</div>
+<script src="../js/simpleMobileMenu.js"></script>
+<a href="#" class="back-to-top"><img src="../img/back.png"></a>
+</body>
+</html>

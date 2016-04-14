@@ -1,0 +1,76 @@
+@import style_main
+@import navbar
+.all-partners
+  .col-xs-6, .col-sm-4, .col-md-3
+    padding: 0 5px
+  .col-xs-12
+    padding: 0
+.partner-card
+  box-shadow: 0 0 5px rgba(0,0,0,0.2)
+  margin: 3px 5px
+  display: inline-block
+  width: 100%
+  overflow: hidden
+  border: 1px solid $light-grey-color
+  .img-responsive
+    max-width: 250px!important
+  &:hover
+    cursor: pointer
+    .partner-card-about
+      background-color: $green-color
+      color: white
+      table tr td.green_ab_t
+        color: $white-color
+      a
+        color: white
+        &:hover
+          color: $white-color
+          text-decoration: underline
+  .all-part-icon
+    width: 100%
+    min-height: 100px
+    padding: 7px
+    display: table
+    border-bottom: 1px solid $light-grey-color
+    .table-cell-part
+      max-width: 250px
+      overflow: hidden
+      display: table-cell
+      vertical-align: middle
+  .partner-card-about
+    padding: 10px
+    color: $text-color
+    word-break: break-all
+    table
+      font-size: 13px
+      tr td
+        padding: 1px 3px
+        vertical-align: top
+        a
+          color: $text-color
+      tr td.green_ab_t
+        color: $green-color
+        font-weight: bold
+        width: 70px
+        vertical-align: top
+    h2
+      padding: 0 0 8px 0
+      margin: 0
+      font-weight: bold
+      font-size: 20px
+.allProv-search
+  margin: 0 0 15px 3px!important
+  width: 350px!important
+  .col-xs-12
+    padding: 0
+  input
+    border: 1px solid $red-color!important
+    border-bottom-left-radius: 2px!important
+    border-top-left-radius: 2px!important
+    &:focus
+      border: 1px solid $red-color!important
+  button
+    max-width: none!important
+@media (max-width: 505px)
+  .allProv-search
+    width: 90%!important

@@ -1,0 +1,135 @@
+@import ../style_main
+@import ../navbar
+.about-money
+  h2
+    font-size: 16px
+    padding: 0 0 15px 0
+    margin: 0
+  h3
+    font-size: 18px
+    font-weight: bold
+    margin: 0 0 10px 0
+.new_chapt
+  .green_chapt
+    margin: 0
+    .green_chapt-zag
+      width: 100%!important
+    .small-chapt
+      display: none!important
+.pay-card
+  border-bottom: 1px solid $light-grey-color
+  padding: 15px 0
+table.provider-monet-info
+  margin-top: 10px
+.green-pay
+  a
+    color: $green-color
+.money-pay-table
+  table
+    padding-top: 10px
+    tr td
+      border: 1px solid black
+      padding: 5px
+      margin: 0
+      vertical-align: top
+    td.bold-table-money
+      font-weight: bold
+      .bold-table-money-cost
+        float: right
+        padding: 0 2px
+    td.name-of-product
+      width: 50%
+    td.all-cost
+      width: 60%
+  .little-table-money
+    display: none
+  p
+    font-size: 12px
+  div
+    font-size: 14px
+  .bold-money-cost
+    font-weight: bold
+  .name-of-direct
+    img
+      width: 130px
+      padding: 5px 0
+@media (max-width: 530px)
+  .money-pay-table
+    table
+      border: 1px solid black
+      tr td
+        display: table-row
+        border: none
+      tr.little-row-money
+        display: none
+    .little-table-money
+      display: inline-block
+      padding: 0 8px 0 5px
+      font-weight: bold
+.numb-money
+  font-size: 15px
+  font-weight: bold
+.not-pay
+  padding: 0 0 3px 0
+  font-weight: bold
+  color: $red-color
+.pay
+  padding: 0 0 3px 0
+  font-weight: bold
+  color: $green-color
+.blue_but
+  padding: 5px 8px
+  background: $green-color
+  border: none
+  border-radius: 2px
+  color: white
+  &:hover
+    background: rgba(0, 169, 158, 0.84)
+.small-chapt-price
+  display: none!important
+  font-weight: bold
+  color: #6b91e2
+.pdf-view
+  height: 500px
+  margin-top: 20px
+@media (max-width: 540px)
+  .big-chapt
+    display: none!important
+  .new_chapt
+    .green_chapt
+      height: 35px
+      .small-chapt
+        display: block!important
+  .small-chapt-price
+    display: block!important
+  .pay-card
+    .col-xs-4
+      width: 100%
+      margin-bottom: 5px
+.pay-border
+  border-right: 1px solid $light-grey-color
+.pay-back
+  margin: 20px auto
+  text-align: center
+  padding: 5px
+  h2
+    font-weight: bold
+    font-size: 16px
+    padding: 0
+    margin: 0
+  img
+    height: 70px
+    margin: 20px auto
+  p
+    text-align: left
+    line-height: 18px
+    margin-bottom: 10px
+  a
+    display: block
+    text-align: left
+    color: $text-color
+    text-decoration: underline
+    &:hover
+      color: $red-color
+  button.blue_but
+    margin: 10px auto

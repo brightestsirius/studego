@@ -1,0 +1,170 @@
+@import style-index
+@import style_main
+@import navbar
+.head
+    min-height: 480px
+    overflow: hidden
+    @extend .no-margin
+    width: $full-width
+    z-index: 10000
+.video-cont
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    max-height: 480px
+    overflow: hidden
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -100
+    video
+        width: 100%
+.main-search
+    width: 70%
+    margin: 0 auto
+    margin-bottom: 100px
+    .container
+        padding: 0
+        .col-sm-4, .col-xs-6
+            padding: 0 4px 10px 4px
+        .block_img_black
+            margin: 0 4px
+            bottom: 10px
+.top-propose
+    margin-bottom: 20px
+    .left
+        padding-right: 3px
+    .right
+        padding-left: 3px
+.showing
+    display: inline-block
+.search-find-count
+    padding: 0
+    .typeahead
+        border-top-right-radius: 2px
+.header-info
+    margin-top: 40px
+    label
+        margin-bottom: 10px
+        color: $green-color
+        font-size: 15px
+    .col-xs-6
+        margin-bottom: 10px
+.country
+    .btn-group > .btn:first-child
+        height: 35px
+        border: none
+        background-color: $green-color
+        color: $white-color
+.add-grenn-border
+    @extend .main_inp
+    border: 1px solid $green-color!important
+.no-data
+    background-color: #f2dede
+    color: #a94442
+    padding: 10px
+    margin: 10px 0
+    border-radius: 2px
+    width: 100%
+    font-size: 13px
+.datepicker-dropdown
+    background: rgba(229,229,229,0.8)
+    padding: 5px 3px 10px 3px
+    width: auto
+.table-condensed>tbody>tr>td
+    padding: 3px
+    font-size: 13px
+    font-family: "Segio", serif
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover
+    background-image: none
+    border: none
+.search-sort
+    div
+        padding: 10px 0
+.header-sort-txt
+    color: black
+    padding: 5px 10px
+    border: 1px solid rgba(0,0,0,0)
+    &:hover
+        color: $green-color
+        padding: 5px 10px
+        border: 1px solid $green-color
+        border-radius: 2px
+        cursor: pointer
+        transition: $transit
+.header-sort-act
+    color: $green-color
+    padding: 5px 10px
+    border: 1px solid $green-color
+    border-radius: 2px
+    cursor: pointer
+.bootstrap-select.btn-group .dropdown-menu
+    background-color: $light-grey-color
+    margin-top: -2px
+.btn-default, .btn-default.hover, .btn-default:focus, .btn-default:active, .open>.dropdown-toggle.btn-default
+    color: #333
+@media (max-width: 1300px)
+    .header-sort
+        width: 90%
+@media (max-width: 1100px)
+    .one
+        width: 50%
+        margin-bottom: 20px
+@media (max-width: 400px)
+    .one
+        width: 100%
+        margin-bottom: 15px
+.main-title
+    margin-top: 30px
+    margin-bottom: 30px
+    color: #363636
+    font-size: 16px
+    font-weight: normal
+.best-title
+    margin-bottom: 20px
+    color: $red-color
+    font-size: 18px
+    font-weight: bold
+.main-top
+    margin-bottom: 25px
+@media (max-width: 1070px)
+    .main-search
+        width: 90%
+.more-b
+    width: 100%
+    text-align: center
+    padding-top: 20px
+#contentSlider
+    margin-bottom: 10px
+.search-container
+    #myContent
+        -moz-column-count: 3!important
+        -webkit-column-count: 3!important
+        column-count: 3!important
+.slider
+    .ui-widget-content
+        border: 1px solid $green-color
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+        cursor: pointer
+        border: 1px solid $green-color
+        background-color: $green-color
+        &:focus
+            border: 1px solid $green-color
+            outline: none
+.ui-state-default, .ui-widget-content .ui-state-default
+    background: #00A99D
+@media (max-width: 600px)
+    .top-propose
+        .left, .right
+            width: 100%
+            padding: 0 15px
+            margin: 5px 0
+    .main-search .container, .about-pruv .container, .provider-propos-cont
+        .col-xs-6
+            width: 100%
+@media (max-width: 514px)
+    .header-info .col-xs-6
+        width: 100%
+@media (max-width: 600px)
+    .search-header-main
+        padding-top: 130px!important

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>studego</title>
+    <link rel="icon" type="image/png" href="../../img/brows-icon.ico" class="web-icon">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="../../js/jquery-1.11.3.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/provider-order.js"></script>
+    <script src="../../js/search.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+<body>
+<div class="main">
+    <div class="mf" id="mf">
+        <div class="in-menu">
+            <a href="../index.html"><div class="logo"><img src="../../img/logo.png"></div></a>
+            <div class="navigation">
+                <nav>
+                    <a href="javascript:void(0)" class="smobitrigger ion-navicon-round"><span>Menu</span></a>
+                    <ul class="nav navbar-nav navbar-right mobimenu">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Помощь <span class="caret"></span></a>
+                            <ul class="dropdown-menu navi mobimenu">
+                                <li><a href=""><i class="glyphicon glyphicon-heart-empty drop-glyp"></i>О нас</a></li>
+                                <li><a href=""><i class="glyphicon glyphicon-thumbs-up drop-glyp"></i>Как это работает</a></li>
+                                <li><a href=""><i class="glyphicon glyphicon-home drop-glyp"></i>Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Избранное <span class="glyphicon glyphicon-star-empty" style="margin-left: 3px;"></span></a>
+                            <ul class="dropdown-menu navi mobimenu">
+                                <li><a href="studentProfile.html"><i class="glyphicon glyphicon-ok drop-glyp"></i>Панель управления</a></li>
+                                <li><a href="studentFavourites.html"><i class="glyphicon glyphicon-star-empty drop-glyp"></i>Избранное</a></li>
+                                <li><a href="studentPodpiska.html"><i class="glyphicon glyphicon-list drop-glyp"></i>Подписка</a></li>
+                                <li><a href="../login.html"><i class="glyphicon glyphicon-bullhorn drop-glyp"></i>Выйти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrap">
+    <div class="stud-prof-main row">
+        <div class="main-title">
+            Личный кабинет <i class="glyphicon glyphicon-menu-right"></i> Избранное
+        </div>
+            <div class="col-xs-12 col-sm-3 prof-left">
+                <div class="profile_menu">
+                    <div class="prof_m_head">Вита Карась</div>
+                    <a href="studentProfile.html"><div class="prof_m_paragr">
+                        <i class="glyphicon glyphicon-calendar"></i>Панель инструментов</div></a>
+                    <a href="studentFavourites.html"><div class="prof_m_paragr active-menu"><i class="glyphicon glyphicon-star-empty"></i>Избранное</div></a>
+                    <a href="studentPodpiska.html"><div class="prof_m_paragr last"><i class="glyphicon glyphicon-book"></i>Подписка</div></a>
+                </div>
+            </div>
+        <div class="col-xs-12 col-sm-9 right-panel">
+            <div class="green_chapt">
+                <span class="green_chapt-zag">Избранное</span>
+            </div>
+            <div class="small-menu">
+                <div class="small-name">
+                    Вита Карась
+                </div>
+                <div class="icons-small-menu">
+                    <a href="studentProfile.html"><i class="glyphicon glyphicon-calendar"><span>Панель инструментов</span></i></a>
+                    <a href="studentFavourites.html"><i class="glyphicon glyphicon-star-empty act-small-menu"><span>Избранное</span></i></a>
+                    <a href="studentPodpiska.html"><i class="glyphicon glyphicon-book drop-glyp"><span>Подписка</span></i></a>
+                </div>
+            </div>
+            <div class="row fav" id="offer-1">
+                        <a href="../offer.html">
+                    <div class="col-xs-4 fav-img">
+                        <img src="../../img/find3.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-xs-8 info-fav">
+                        <h2>Поездка в Лондон</h2>
+                        <table>
+                            <tr>
+                                <td class="right-table-font">Описание:</td>
+                                <td> Phasellus fringilla arcu nec mi interdum, sit amet commodo lacus tincidunt. D
+                                    uis scelerisque, arcu pharetra blandit accumsan, nibh felis egestas odio.
+                                    euismod hendrerit ligula vel pharetra. Maecenas blandit at quam non efficitur.</td>
+                            </tr>
+                            <tr>
+                                <td class="right-table-font">Дата публикации:</td>
+                                <td>07.03.2016</td>
+                            </tr>
+                        </table>
+                    </div>
+                        </a>
+                        <div class="del-line">
+                            <div class="col-xs-7 col-sm-10 line-pad">
+                                <hr>
+                            </div>
+                            <div class="col-xs-5 col-sm-2 line">
+                                <button name="offer-1" class="del-offer"><i class="fa fa-times-circle-o" style="margin-right: 5px;"></i>Удалить</button>
+                            </div>
+                        </div>
+                </div>
+            <div class="row fav" id="offer-2">
+                <a href="../offer.html">
+                    <div class="col-xs-4 fav-img">
+                        <img src="../../img/find3.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-xs-8 info-fav">
+                        <h2>Поездка в Лондон</h2>
+                        <table>
+                            <tr>
+                                <td class="right-table-font">Описание:</td>
+                                <td> Phasellus fringilla arcu nec mi interdum, sit amet commodo lacus tincidunt. D
+                                    uis scelerisque, arcu pharetra blandit accumsan, nibh felis egestas odio.
+                                    euismod hendrerit ligula vel pharetra. Maecenas blandit at quam non efficitur.</td>
+                            </tr>
+                            <tr>
+                                <td class="right-table-font">Дата публикации:</td>
+                                <td>07.03.2016</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <div class="del-line">
+                    <div class="col-xs-7 col-sm-10 line-pad">
+                        <hr>
+                    </div>
+                    <div class="col-xs-5 col-sm-2 line">
+                        <button name="offer-2" class="del-offer"><i class="fa fa-times-circle-o" style="margin-right: 5px;"></i>Удалить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row fav" id="offer-3">
+                <a href="../offer.html">
+                    <div class="col-xs-4 fav-img">
+                        <img src="../../img/find3.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-xs-8 info-fav">
+                        <h2>Поездка в Лондон</h2>
+                        <table>
+                            <tr>
+                                <td class="right-table-font">Описание:</td>
+                                <td> Phasellus fringilla arcu nec mi interdum, sit amet commodo lacus tincidunt. D
+                                    uis scelerisque, arcu pharetra blandit accumsan, nibh felis egestas odio.
+                                    euismod hendrerit ligula vel pharetra. Maecenas blandit at quam non efficitur.</td>
+                            </tr>
+                            <tr>
+                                <td class="right-table-font">Дата публикации:</td>
+                                <td>07.03.2016</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <div class="del-line">
+                    <div class="col-xs-7 col-sm-10 line-pad">
+                        <hr>
+                    </div>
+                    <div class="col-xs-5 col-sm-2 line">
+                        <button name="offer-3" class="del-offer"><i class="fa fa-times-circle-o" style="margin-right: 5px;"></i>Удалить</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+<div class="footer">
+    <div class="main-wrap">
+    <div class="footer-wrap">
+        <div class="footer-icon">
+            <a href="../index.html"><img src="../../img/logo.png"></a>
+        </div>
+        <div class="footer-text row">
+            <div class="col-sm-12 col-md-5 foot-main">
+                Элемент политического процесса, тем более в условиях социально-экономического кризиса, приводит механизм власти.
+                Совершенно неверно полагать, что понятие политического участия отражает механизм власти.
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Компания</li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Конфиденциальность</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Студенту</li>
+                    <li><a href="">Популярные запросы</a></li>
+                    <li><a href="">ТОП-обьявления</a></li>
+                    <li><a href="">Помощь</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 foot-sec">
+                <ul>
+                    <li class="footer-ul-top">Партнерам</li>
+                    <li><a href="">Добавить предложения</a></li>
+                    <li><a href="">Наши услуги</a></li>
+                    <li><a href="">Советы</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-sn">
+            <a href="http://vk.com/studego"><img src="../../img/social/vk.png" class="social"><img src="../../img/social/vk-a.png" class="social-act"></a>
+            <a href=""><img src="../../img/social/f.png" class="social"><img src="../../img/social/f-a.png" class="social-act"></a>
+            <a href="https://www.instagram.com/studego/"><img src="../../img/social/inst.png" class="social"><img src="../../img/social/inst-a.png" class="social-act"></a>
+            <a href=""><img src="../../img/social/g+.png" class="social"><img src="../../img/social/g+-a.png" class="social-act"></a>
+            <a href=""><img src="../../img/social/tw.png" class="social"><img src="../../img/social/tw-a.png" class="social-act"></a>
+            <a href=""><img src="../../img/social/yt.png" class="social"><img src="../../img/social/yt-a.png" class="social-act"></a>
+        </div>
+        <div class="copyright">
+            Copyright © 2015 «Studego.com» является зарегистрированой торговой маркой. Все права защищены
+        </div>
+    </div>
+        </div>
+</div>
+<script src="../../js/simpleMobileMenu.js"></script>
+</body>
+</html>

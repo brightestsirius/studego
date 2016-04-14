@@ -1,0 +1,647 @@
+@font-face
+  font-family: "Sergio"
+  src: url('../font/segoeui.ttf')
+$font-stack: Sergio, sans-serif
+$white-color: #ffffff
+$text-color: #363636
+$light-grey-color: #e7e7e7
+$green-color: #00a99e
+$green-color_hover: rgba(0, 169, 157, 0.8)
+$red-color: rgba(249, 43, 52, 0.85)
+$red-color_hover: rgba(249, 43, 52, 0.9)
+$text-size: 14px
+$transit: 0.3s
+$full-width: 100%
+.web-icon
+  width: auto
+.logo
+  img
+    height: 60px
+    padding: 3px 0
+.main
+  min-height: 600px
+.glyphicon
+  position: inherit
+  line-height: 1!important
+.container
+  width: 100%
+a
+  color: #9f9f9f
+  &:hover
+    text-decoration: none
+    color: $red-color
+    outline: none!important
+.fa-user
+  margin-left: 7px
+  line-height: 10px
+.save-changes
+  margin-top: 20px
+button:focus, input:focus, .bootstrap-select.btn-group .dropdown-menu li a:focus,.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus
+  outline: none
+.btn:focus,.btn:active
+  box-shadow: none
+  border: none
+.no-margin
+  margin: 0 auto
+  padding: 0
+.main-wrap
+  max-width: 2300px
+  margin: 0 auto
+body
+  @extend .no-margin
+  font-family: $font-stack
+  font-size: $text-size
+.main
+  margin: 0 auto
+  height: $full-width
+  min-height: 600px
+.main-content
+  width: 70%
+  margin: 0 auto
+  margin-bottom: 40px
+  text-align: center
+  .container
+    padding: 0
+    .col-sm-4, .col-md-3, .col-xs-6
+      padding: 0 3px
+    .col-xs-12
+      padding: 0
+.main-title
+  margin-bottom: 20px
+  font-size: 16px
+  font-weight: normal
+.glyphicon-menu-right
+  font-size: 10px
+button.red_but
+  color: $white-color
+  font-family: $font-stack
+  background: $red-color
+  font-size: $text-size
+  text-align: center
+  border-radius: 50px
+  border: none
+  padding: 8px 30px 10px 30px
+  margin: 20px 0
+  cursor: pointer
+  &:hover
+    background: $red-color_hover
+    transition: $transit
+button.green_but
+  @extend .red_but
+  background: $green-color
+  &:hover
+    background: $green-color_hover
+    transition: $transit
+.green_out-pos
+  width: 100%
+  margin: 0 auto
+  text-align: center
+.green_out
+  display: none
+  color: $white-color
+  font-family: $font-stack
+  font-size: $text-size
+  text-align: center
+  border-radius: 50px
+  border: none
+  cursor: pointer
+  padding: 8px 10px 10px 10px
+  margin: 10px auto
+  width: 130px
+  background: $green-color
+  &:hover
+    background: $green-color_hover
+    transition: $transit
+.provider-act-addprop
+  color: #5dd9ed
+  font-weight: bold
+input.main_inp, textarea.main_inp
+  width: $full-width
+  padding: 8px
+  margin: 3px 0
+  border-radius: 2px
+  border: 1px solid $light-grey-color
+  font-family: $font-stack
+  &:focus
+    outline: none
+    box-shadow: none
+    border: 1px solid $green-color
+.green_chapt
+  width: $full-width
+  background-color: $green-color
+  padding: 8px 15px
+  margin: 0 0 10px 0
+  color: $white-color
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  .glyphicon
+    margin-right: 5px
+.green_chapt-zag
+  font-weight: bold
+  width: 49.5%
+  display: inline-block
+.green_chapt-edit
+  text-align: right
+  width: 49.5%
+  display: inline-block
+  color: $white-color
+  &:hover
+    color: $white-color
+    text-decoration: underline
+  i
+    margin-right: 5px
+@media (max-width: 690px)
+  .green_chapt-zag
+    width: 48%
+@media (max-width: 400px)
+  .green_chapt-edit i
+    display: none
+.prof-left
+  padding-left: 0
+.profile_menu
+  border-radius: 5px
+  width: $full-width
+  margin: 0 0 20px 0
+  i
+    color: $green-color
+    font-size: 15px
+    padding-right: 3px
+.prof_m_head
+  background-color: rgb(249, 43, 52)
+  color: $white-color
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  padding: 8px 10px
+  font-weight: bold
+.prof_m_paragr
+  background-color: rgba(231, 231, 231, 0.59)
+  border-bottom: 1px solid #e7e7e7
+  padding: 13px 10px
+  border-radius: 0
+  color: $text-color
+  .last
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+  i
+    padding-right: 8px
+  &:hover
+    background-color: #e5e5e5
+    transition: $transit
+.active-menu
+  font-weight: bold
+  border-radius: 0
+.block_img
+  width: 100%
+  overflow: visible
+  margin: 4px
+  padding: 0
+  cursor: pointer
+  position: relative
+  &:hover .block_img_black
+    display: block
+  &:hover .img_bottom
+    opacity: 0
+.hot
+  position: absolute
+  top: 10px
+  margin-left: 8px
+  padding: 3px 12px
+  border-radius: 15px
+  background-color: rgb(249, 43, 52)
+  color: $white-color
+.reg-main-main
+  .modal-content
+    height: 400px
+    overflow-y: scroll
+.price
+  @extend .hot
+  background-color: $green-color
+  padding: 5px 13px
+  font-size: 14px
+  top: 15px
+  left: 10px
+  margin-left: 0
+.img_bottom
+  background-color: $light-grey-color
+  padding: 15px 5px
+.img_bottom_text
+  display: inline-block
+  width: 49%
+  font-weight: bold
+  padding-left: 5px
+  text-align: left
+  color: $text-color
+.img_bottom_cost
+  text-align: right
+  display: inline-table
+  vertical-align: top
+  width: 49%
+.cost
+  padding: 6px 8px
+  background-color: rgb(249, 43, 52)
+  color: $white-color
+  border-radius: 15px
+.block_img_black
+  position: absolute
+  left: 0
+  bottom: 0
+  right: 0
+  overflow: hidden
+  background: rgba(0, 0, 0, 0.8)
+  transition: $transit
+  padding: 15px 20px
+  color: $white-color
+  font-size: 12px
+  display: none
+.block_img_bl_first
+  display: inline-block
+  text-align: center
+  border-bottom: 1px solid $white-color
+  padding-bottom: 8px
+  margin-bottom: 8px
+  width: $full-width
+  table tr td
+    padding: 0 5px
+  i
+    color: rgb(249, 43, 52)
+    padding-right: 3px
+.block_img_bl_second
+  text-align: left
+.img-wrapp
+  overflow: hidden
+.img-responsive
+  max-width: 100%
+  width: auto
+  margin: 0 auto
+table.about_table
+  padding: 0
+  width: auto
+  tr td
+    padding: 3px 0
+    a
+      color: $text-color
+  tr td.green_ab_t
+    color: $green-color
+    font-weight: bold
+    padding-right: 8px
+    vertical-align: top
+.img-student
+  float: right
+  width: auto
+  max-height: 200px
+  max-width: 200px
+@media (max-width: 690px)
+  .about-side, .about-side-img, .small-statistic
+    width: 100%
+  .img-student
+    float: none
+    text-align: left
+    margin-top: 10px
+.modal-dialog
+  margin-top: 100px
+.modal-header
+  border-bottom: 1px solid $light-grey-color
+  width: 100%
+  padding: 10px 25px 5px 25px
+  h4
+    font-size: 18px
+    color: $green-color
+    padding: 0
+.modal-content
+  width: 100%
+  margin: 0 auto
+  text-align: left
+.modal-body
+  margin-top: 0
+@media (max-width: 750px)
+  .modal-content
+    width: 90%
+    margin-top: 100px
+.but-nish
+  width: $full-width
+  margin: 20px auto
+  text-align: center
+.green_img
+  @extend .no-margin
+  cursor: pointer
+  position: relative
+  width: 100%
+  overflow: hidden
+.green_img_bot
+  overflow: hidden
+  padding: 15px 20px
+  color: $white-color
+  background: rgb(0, 169, 157)
+  text-align: left
+  line-height: 15px
+  h2
+    padding: 0 0 5px 0
+    margin: 0
+    font-size: 18px
+    font-weight: bold
+    color: $white-color
+    text-align: left
+.green_img_top
+  position: absolute
+  bottom: 0
+  left: 0
+  display: inline-block
+  text-align: center
+  background-color: rgba(0, 169, 157, 0.8)
+  padding: 9px 9px 9px 20px
+  color: $white-color
+  width: $full-width
+  border-bottom: 1px solid $white-color
+  table
+    width: 100%
+    tr td
+      padding-right: 0
+      vertical-align: top
+  i
+    color: rgb(249, 43, 52)
+    padding-right: 5px
+.gr_img:hover
+  .green_img_bot
+    background-color: #f92b34
+  .price
+    background-color: $red-color
+  .green_img_top
+    background-color: $red-color
+    i
+      color: $white-color
+.cont
+  box-shadow: 0 0 8px rgba(0,0,0,0.2)
+  text-align: left
+  margin: 5px
+  cursor: pointer
+  color: #898989
+  overflow: hidden
+  img
+    margin: 0 auto
+    text-align: center
+  .data-inf
+    padding: 5px 25px
+  .data-inf-cont
+    display: inline-block
+    width: 45%
+    font-size: 12px
+    margin-bottom: 5px
+  i
+    margin-right: 3px
+    color: rgb(249, 43, 52)
+  table
+    width: 80px
+    td
+      vertical-align: top
+  h2
+    color: #363636
+    font-weight: bold
+    font-size: 15px
+    padding: 0 25px
+    text-align: left
+  p
+    font-size: 12px
+    padding: 0 25px
+  &:hover
+    .data-inf
+      background-color: $red-color
+      color: $white-color
+      transition: $transit
+    i
+      color: $white-color
+      transition: $transit
+.cont-img
+  @extend .cont
+  position: relative
+  overflow: hidden
+  height: 500px
+  img
+    height: 100%
+  h3
+    padding: 20px
+    margin: 0
+    color: $white-color
+    font-size: 14px
+    font-weight: bold
+    position: absolute
+    bottom: 0
+    left: 0
+    width: $full-width
+    text-shadow: 0 0 10px rgba(0,0,0,0.2)
+  &:hover
+    h3
+      background-color: white
+      color: $red-color
+      text-shadow: none
+.cont-red
+  @extend .cont
+  background-color: orange
+  color: $white-color
+  .cont-back-icon
+    width: $full-width
+    height: 80px
+    margin: 0 auto
+    text-align: center
+    font-size: 50px
+    padding-top: 25px
+  h2, i
+    color: white
+  &:hover
+    .cont-back-icon i
+      color: white
+    .data-inf
+      background-color: $white-color
+      color: orange
+    i
+      color: orange
+.right-panel
+  padding: 0
+  .row
+    margin: 0
+.footer
+  @extend .no-margin
+  width: $full-width
+  background-color: #252525
+  color: #9f9f9f
+  line-height: 25px
+  ul
+    list-style: none
+    padding: 0
+.footer-wrap
+  width: 70%
+  margin: 0 auto
+.footer-ul-top
+  font-weight: bold
+  color: #c9c8c8
+.foot-sec ul li.footer-ul-top:hover
+  color: #c9c8c8
+.footer-icon
+  padding-top: 30px
+  margin-bottom: 30px
+  text-align: center
+  cursor: pointer
+  img
+    height: 60px
+.footer-sn
+  text-align: center
+  font-size: 15px
+  color: #c9c8c8
+  margin: 30px 0 40px 0
+.social-act
+  display: none
+.social,.social-act
+  margin: 0 8px
+  opacity: 0.8
+  width: 18px
+.footer-sn a:hover .social
+  display: none
+.footer-sn a:hover .social-act
+  display: inline-block
+.copyright
+  text-align: center
+  @extend .no-margin
+  font-size: 11px
+  color: #9f9f9f
+  padding-bottom: 30px
+.small-menu
+  padding: 0 15px
+  margin: 0
+  display: none
+  width: 100%
+.small-name
+  padding: 0 0 5px 0
+  color: rgb(249, 43, 52)
+  font-size: 16px
+  font-weight: bold
+.icons-small-menu
+  padding: 0 0 8px 0
+  width: 100%
+  line-height: 25px
+  border-bottom: 1px solid #e5e5e5
+  i
+    font-size: 12px
+    span
+      margin-right: 8px
+      font-family: "Segio", serif
+      font-size: 14px
+      margin-left: 4px
+    &:hover
+      color: $red-color
+.act-small-menu
+  color: $red-color
+.line
+  button
+    margin: 0
+    padding: 3px 0 5px 0
+    background-color: $green-color
+    border: none
+    width: 100%
+    border-radius: 30px
+    color: white
+    font-size: 13px
+    &:hover
+      background-color: $red-color
+      transition: $transit
+    .fa-times-circle-o
+      margin-right: 5px
+.del-line
+  padding-left: 15px
+  .col-sm-2, .col-xs-5
+    padding-left: 0
+  .col-sm-10, .col-xs-7
+    padding: 0
+.del-line hr
+  border-top: 1px solid $green-color
+  margin-top: 13px
+@media (max-width: 1253px)
+  .foot-main
+    width: 100%
+    margin-bottom: 30px
+  .foot-sec
+    width: 33%
+@media (max-width: 893px)
+  .footer-wrap
+    width: 80%
+@media (max-width: 768px)
+  .foot-sec
+    width: 100%
+@media (max-width: 965px)
+  .prof-left
+    display: none
+  .right-panel
+    width: 100%
+  .small-menu
+    display: inline-block
+    margin-bottom: 15px
+  .small-statistic
+    display: inline-block
+.profile-error
+  background-color: cornsilk
+  padding: 0
+  h2
+    font-size: 14px
+    font-weight: bold
+    padding: 3px 15px
+    margin: 0
+  p
+    padding: 10px
+    margin: 0
+  .checkbox
+    margin-left: 15px
+  button
+    margin-left: 15px
+    margin-bottom: 20px
+#container
+  width: 100%
+  margin: 0 auto
+  ul
+    list-style-type: none
+    padding: 0
+    overflow: hidden
+    li
+      padding: 1px 4px
+      margin: 0
+#myContent
+  -moz-column-count: 3
+  -moz-column-gap: 0px
+  -webkit-column-count: 3
+  -webkit-column-gap: 0px
+  column-count: 3
+  column-gap: 0px
+  width: 100%
+  list-style-type: none
+  padding: 0
+  li
+    margin: 0
+    padding: 1px 4px
+  .cont, .cont-img, .cont-red
+    display: inline-block
+    width: 100%
+    overflow: visible
+@-moz-document url-prefix()
+  #myContent
+    .cont-img
+      overflow: hidden
+.modal-after
+  margin-bottom: 10px
+@media only screen and (max-width : 1450px), only screen and (max-device-width : 1450px)
+  #container
+    width: 100%
+@media only screen and (max-width : 850px), only screen and (max-device-width : 850px)
+  #myContent
+    -moz-column-count: 2
+    -moz-column-gap: 0px
+    -webkit-column-count: 2
+    -webkit-column-gap: 0px
+    column-count: 2
+    column-gap: 0px
+    width: 100%
+@media only screen and (max-width : 600px), only screen and (max-device-width : 600px)
+  #myContent
+    -moz-column-count: 1
+    -moz-column-gap: 0px
+    -webkit-column-count: 1
+    -webkit-column-gap: 0px
+    column-count: 1
+    column-gap: 0px
+    width: 100%

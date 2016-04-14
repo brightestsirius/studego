@@ -1,0 +1,183 @@
+@font-face {
+  font-family: Segio;
+  src: url(../font/segoeui.ttf); }
+.glyphicon {
+  line-height: 0; }
+
+.in-menu {
+  width: 70%;
+  margin: 0 auto; }
+
+.nav-back {
+  background-color: #36373a;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto; }
+
+.navigation {
+  float: right; }
+
+.cf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  padding-top: 5px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 2100px; }
+
+.navigation nav ul li a {
+  font-size: 14px;
+  font-family: Segio, serif;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 23px 20px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s; }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background: rgba(0, 0, 0, 0.5); }
+
+.nav > li > a:focus {
+  background: none; }
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 0; }
+
+#search input[type="text"] {
+  background: url(../img/search.png) no-repeat 10px 10px;
+  border: 0 none;
+  font: 14px Segio, serif;
+  color: white;
+  width: 5px;
+  margin-top: 16px;
+  margin-right: -10px;
+  cursor: pointer;
+  padding: 8px 20px 8px 30px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s; }
+  #search input[type="text"]:focus {
+    width: 200px;
+    background-color: #63656a;
+    color: white; }
+
+@media (max-width: 768px) {
+  .navigation nav ul {
+    padding-bottom: 0;
+    overflow-y: auto; }
+
+  #search input[type="text"] {
+    background: url(../img/search.png) no-repeat 20px 15px !important;
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    margin-top: 0 !important;
+    padding: 15px 20px 15px 45px !important;
+    border-radius: 0 !important; } }
+.navigation nav ul li ul li {
+  display: block; }
+  .navigation nav ul li ul li a {
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-family: Segio, serif;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s; }
+    .navigation nav ul li ul li a:hover {
+      color: #00a99d; }
+  .navigation nav ul li ul li:hover {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); }
+
+.drop-glyp {
+  margin-right: 10px;
+  font-size: 14px; }
+
+.smobitrigger {
+  color: #fff;
+  opacity: 0.8;
+  margin-top: 8px; }
+  .smobitrigger:hover {
+    color: #fff;
+    opacity: 1;
+    transition: 0.3s; }
+
+div#page {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; }
+
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0;
+  text-decoration: none;
+  color: #000000;
+  background-color: rgba(235, 235, 235, 0.8);
+  font-size: 14px;
+  padding: 1em;
+  display: none; }
+  .back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00a99d;
+    transition: 0.2s; }
+
+@media (max-width: 930px) {
+  .in-menu {
+    width: 90%; } }
+@media (min-width: 769px) {
+  .mobimenu {
+    background: none !important; }
+
+  .navigation nav ul li a {
+    color: #fff !important; }
+    .navigation nav ul li a:hover {
+      color: #00a99d !important; }
+
+  .navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: rgba(0, 0, 0, 0.5) !important;
+    padding: 5px 0; } }
+@media (max-width: 768px) {
+  .mnuopn a {
+    font-size: 14px;
+    font-family: "Segio", serif; }
+    .mnuopn a:hover {
+      width: 100%;
+      background-color: rgba(18, 96, 91, 0.8) !important; }
+
+  .mnuclose {
+    background-color: #4c4c4c; }
+
+  .navigation nav ul li a {
+    padding: 15px 20px; } }
+@media (min-width: 768px) and (max-width: 769px) {
+  .navbar-nav > li > .dropdown-menu {
+    min-height: 120px; } }
+
+/*# sourceMappingURL=navbar.css.map */

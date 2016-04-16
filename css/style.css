@@ -460,8 +460,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -664,11 +662,12 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative;
+      overflow: hidden\0;}
 
 #myContent {
   -moz-column-count: 3;
@@ -686,7 +685,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -714,7 +714,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -1481,8 +1484,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -1685,11 +1686,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -1707,7 +1708,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -1735,7 +1737,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -1991,7 +1996,7 @@ table tr td.new-main-color {
     background: none; }
     .table-cell-part .fileinput .thumbnail img {
       height: auto;
-      max-height: none;
+      max-height: 150px;
       width: auto; }
     .table-cell-part .fileinput .thumbnail p {
       padding-top: 8px;
@@ -2488,8 +2493,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -2692,11 +2695,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -2714,7 +2717,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -2742,7 +2746,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -3443,8 +3450,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -3647,11 +3652,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -3669,7 +3674,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -3697,7 +3703,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -4489,8 +4498,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -4693,11 +4700,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -4715,7 +4722,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -4743,7 +4751,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -5577,8 +5588,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -5781,11 +5790,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -5803,7 +5812,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -5831,7 +5841,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -6628,8 +6641,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -6832,11 +6843,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -6854,7 +6865,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -6882,7 +6894,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -7602,8 +7617,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -7806,11 +7819,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -7828,7 +7841,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -7856,7 +7870,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -8513,8 +8530,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -8717,11 +8732,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -8739,7 +8754,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -8767,7 +8783,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -9359,6 +9378,9 @@ label.error {
 .datepicker table tr td.active.active {
   background-color: #00a99e; }
 
+.datepicker table tr td.old.active {
+  background: none; }
+
 .datepicker table tr td.day:hover {
   background: #fd5b62;
   cursor: pointer; }
@@ -9947,8 +9969,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -10151,11 +10171,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -10173,7 +10193,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -10201,7 +10222,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -10972,8 +10996,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -11176,11 +11198,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -11198,7 +11220,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -11226,7 +11249,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -11902,8 +11928,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -12106,11 +12130,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -12128,7 +12152,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -12156,7 +12181,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -12799,8 +12827,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -13003,11 +13029,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -13025,7 +13051,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -13053,7 +13080,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -13736,8 +13766,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -13940,11 +13968,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -13962,7 +13990,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -13990,7 +14019,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -14631,8 +14663,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -14835,11 +14865,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -14857,7 +14887,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -14885,7 +14916,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -16220,8 +16254,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -16424,11 +16456,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -16446,7 +16478,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -16474,7 +16507,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -16719,7 +16755,8 @@ div#page {
   margin: 10px 0;
   border-radius: 2px;
   width: 100%;
-  font-size: 13px; }
+  font-size: 13px;
+  display: none; }
 
 .datepicker-dropdown {
   background: rgba(229, 229, 229, 0.8);
@@ -17458,8 +17495,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -17662,11 +17697,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -17684,7 +17719,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -17712,7 +17748,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 #mf {
   position: relative;
   width: 100%;
@@ -18245,8 +18284,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -18449,11 +18486,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -18471,7 +18508,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -18499,7 +18537,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }
@@ -19194,8 +19235,6 @@ table.about_table {
     transition: 0.3s; }
 
 .cont-img {
-  position: relative;
-  overflow: hidden;
   height: 500px; }
   .cont-img img {
     height: 100%; }
@@ -19398,11 +19437,11 @@ table.about_table {
   margin: 0 auto; }
   #container ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden; }
+    padding: 0; }
     #container ul li {
       padding: 1px 4px;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
 
 #myContent {
   -moz-column-count: 3;
@@ -19420,7 +19459,8 @@ table.about_table {
   #myContent .cont, #myContent .cont-img, #myContent .cont-red, #myContent .cont-img, #myContent .cont-red {
     display: inline-block;
     width: 100%;
-    overflow: visible; }
+    overflow: visible;
+    position: relative; }
 
 @-moz-document url-prefix() {
   #myContent .cont-img {
@@ -19448,7 +19488,10 @@ table.about_table {
     -webkit-column-gap: 0px;
     column-count: 1;
     column-gap: 0px;
-    width: 100%; } }
+    width: 100%; }
+
+  #container ul li {
+    overflow-x: hidden; } }
 @font-face {
   font-family: Segio;
   src: url(../font/segoeui.ttf); }

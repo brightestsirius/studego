@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Sergio";
-  src: url("../font/segoeui.ttf"); }
+  src: url("../../font/segoeui.ttf"); }
 .container {
   width: 100%; }
 
@@ -523,7 +523,7 @@ table.about_table {
 /*/footer */
 @font-face {
   font-family: Segio;
-  src: url(../font/segoeui.ttf); }
+  src: url(../../font/segoeui.ttf); }
 .glyphicon {
   line-height: 0; }
 
@@ -568,7 +568,7 @@ table.about_table {
   padding: 5px 0; }
 
 #search input[type="text"] {
-  background: url(../img/search.png) no-repeat 10px 10px;
+  background: url(../../img/search.png) no-repeat 10px 10px;
   border: 0 none;
   font: 14px Segio, serif;
   color: white;
@@ -595,7 +595,7 @@ table.about_table {
     overflow-y: auto; }
 
   #search input[type="text"] {
-    background: url(../img/search.png) no-repeat 20px 15px !important;
+    background: url(../../img/search.png) no-repeat 20px 15px !important;
     width: 100% !important;
     background-color: rgba(0, 0, 0, 0.5) !important;
     margin-top: 0 !important;

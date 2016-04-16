@@ -13,9 +13,10 @@
     <script src="../js/jquery-1.11.3.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap-select.js"></script>
-    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
     <script src="../js/tapered.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/calendar.js"></script>
 </head>
 <body id="page">
 <div class="head">
@@ -56,10 +57,10 @@
     <div class="main-wrap">
     <div class="video-cont">
         <video poster="../video/Yes-No.jpg" autoplay loop controls tabindex="0" id="backg-video">
-            <source src="../video/Yes-No.mp4" id="bg-video" type='video/mp4 codecs="avc1.42E01E, mp4a.40.2"'/>
-            <source src="../video/Yes-No.webm" type='video/webm codecs="vp8, vorbis"'/>
+            <source src="../video/Yes-No.mp4" id="bg-video" type='video/mp4'/>
+            <source src="../video/Yes-No.webm" type='video/webm'/>
         </video>
-        <div id="bak_img"><img src="../img/san-frans.jpg" id="back_img"></div>
+        <div id="bak_img"><img src="../img/san-fr.jpg" id="back_img"></div>
     </div>
     <div class="header-main search-header-main">
         <div class="header-search-form row">
@@ -284,10 +285,9 @@
                 <label for="header-info-date" class="header-lab">Дата:</label>
 
                 <div id="header-info-date">
-                    <span>от</span><input placeholder="03.06.2016" class="add-grenn-border data-start" id="example1">
-                    <span>до</span><input class="add-grenn-border data-end" placeholder="05.06.2016" id="example2">
+                    <span>от</span><input placeholder="03.06.2016" class="add-grenn-border data-start start-data-id">
+                    <span>до</span><input class="add-grenn-border data-end" placeholder="05.06.2016">
                 </div>
-                <div class="no-data"><i class="fa fa-flag"></i> Неправильные временные рамки</div>
             </div>
             <div class="col-xs-6 col-sm-3 slider">
                 <label for="header-info-date" class="header-lab">Цена:</label>
@@ -534,16 +534,7 @@
     </div>
         </div>
 </div>
-<script src="../js/bootstrap-datepicker.js"></script>
-<script src="../js/simpleMobileMenu.js"></script>
 <script>
-    $('#example1').datepicker({
-        format: "dd.mm.yyyy"
-    });
-    $('#example2').datepicker({
-        format: "dd.mm.yyyy"
-    });
-
     $("#slider").slider({
         value: 0,
         min: 0,
@@ -558,6 +549,8 @@
         }
     });
 </script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<script src="../js/simpleMobileMenu.js"></script>
 <a href="#" class="back-to-top"><img src="../img/back.png"></a>
 </body>
 </html>

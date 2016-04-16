@@ -412,8 +412,6 @@ table.about_table
       transition: $transit
 .cont-img
   @extend .cont
-  position: relative
-  overflow: hidden
   height: 500px
   img
     height: 100%
@@ -597,10 +595,11 @@ table.about_table
   ul
     list-style-type: none
     padding: 0
-    overflow: hidden
     li
       padding: 1px 4px
       margin: 0
+      position: relative
+      overflow: hidden\0
 #myContent
   -moz-column-count: 3
   -moz-column-gap: 0px
@@ -618,6 +617,7 @@ table.about_table
     display: inline-block
     width: 100%
     overflow: visible
+    position: relative
 @-moz-document url-prefix()
   #myContent
     .cont-img
@@ -645,3 +645,7 @@ table.about_table
     column-count: 1
     column-gap: 0px
     width: 100%
+  #container
+    ul
+      li
+        overflow-x: hidden

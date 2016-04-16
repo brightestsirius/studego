@@ -14,6 +14,7 @@
     <script src="../../js/search.js"></script>
     <script type="text/javascript" src="../../js/jquery.minicolors.js"></script>
     <script type="text/javascript" src="../../js/summernote.min.js"></script>
+    <script src="../../js/calendar.js"></script>
     <link rel="stylesheet" href="../../css/jquery.minicolors.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/summernote-bs3.css">
@@ -118,11 +119,9 @@
                     <input class="main_inp" type="text" placeholder="Цена"/>
 
                     <div class="ab-left">
-                    <span class="clock"><input class="main_inp data-start" type="text" placeholder="Дата начала"
-                                               id="example1"/></span>
-                        <span class="clock"><input class="main_inp data-end" type="text" placeholder="Дата окончания" id="example2"/></span>
+                    <span class="clock"><input class="main_inp data-start" type="text" placeholder="Дата начала"/></span>
+                        <span class="clock"><input class="main_inp data-end" type="text" placeholder="Дата окончания"/></span>
                     </div>
-                    <div class="no-data"><i class="fa fa-flag"></i> Неправильные временные рамки</div>
                     <div class="row">
                         <div class="fotos">
                             <h2>Оберіть головне фото пропозиції</h2>
@@ -805,18 +804,10 @@
         </div>
     </div>
 </div>
-<script src="../../js/bootstrap-datepicker.js"></script>
 <script>
-    $('#example1').datepicker({
-        format: "dd.mm.yyyy"
-    });
-    $('#example2').datepicker({
-        format: "dd.mm.yyyy"
-    });
-    $(document).ready(function() {
-        $('#summernote').summernote({height: 300});
-    });
+    $('textarea[name=summernote]').summernote({height: 300})
 </script>
+<script src="../../js/bootstrap-datepicker.js"></script>
 <script src="../../js/simpleMobileMenu.js"></script>
 <script src="../../js/jasny-bootstrap.js"></script>
 </body>
